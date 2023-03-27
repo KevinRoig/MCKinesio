@@ -1,6 +1,3 @@
-@import url('https://fonts.google.com/specimen/Montserrat');
-
-
 @font-face {
     font-family: 'Montserrat-Light';
     src:
@@ -87,6 +84,7 @@ a {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 0.8rem;
 }
 
 #logo img {

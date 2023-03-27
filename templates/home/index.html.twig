@@ -24,7 +24,82 @@
         <div class="right_container">
             <img src="{{asset('build/images/mathilde_full_3.png') }}" alt="Une photo de Mathilde Courgeon, Kinésiologue">
         </div>
+    </section>
+    <section class="second_section">
+        <div>
+            <p>
+                Petite explication de la kinésio, et petite présentation; <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit totam perspiciatis, fuga vel itaque, quibusdam cumque maxime autem dolorum voluptatibus unde. Impedit itaque, minus labore cupiditate unde architecto possimus autem?
+            </p>
+        </div>
+        <span class="button_container">
+            <a href="{{ path('kinesiologie') }}" id="button"> Découvrir la kinésiologie </a>
+        </span>
+    </section>
 
+    <section class="third_section">
+        <div>
+            <p>
+                Vous pouvez réserver directement un créneau ou me contacter pour toute question.
+            </p>
+        </div>
+        <div>
+            <p>
+                ICI, Calendly à intégrer
+            </p>
+        </div>
+        <span class="button_container">
+            <a href="{{ path('contact') }}" id="button"> Contact </a>
+        </span>
+    </section>
+
+    <section class="fourth_section">
+        <h2>Informations pratiques</h2>
+        <div class="infos_container">
+            <div>
+                <img src="{{asset('build/images/intérieur_cabinet.jpg') }}" alt="L'intérieur du cabinet de Kinésiologie">
+            </div>
+            <div class="infos_details">
+                <p>Mon cabinet est situé au ??, rue du Rempart, à Tours. <br><br>
+                Je suis joignable au <a href="tel:+33674752172">06 00 00 00 00</a> , par <a href="{{path('contact') }}">le formulaire de contact</a> ou par mail : <a href="mailto:"><span style="unicode-bidi:bidi-override; direction: rtl;">
+                    moc.tset@tcatnoc</span></a> 
+                </p> 
+                <span class="button_container">
+                    <a href="{{ path('practical_informations') }}" id="button"> En savoir + </a>
+                </span>
+            </div>    
+        </div>
+    </section>
+
+    <section class="fifth_section">
+        <div id="customers_opinion">
+            <section class="slider-wrapper">
+                <div id="customers_opinion_title">
+                    <p>Avis clients</p>
+                </div>
+    
+                <img class="slide-arrow" id="slide-arrow-prev" src="{{ asset('build/images/left_arrow.png')}}"
+                    alt="Fleche de gauche pour naviguer dans les avis">
+                <img class="slide-arrow" id="slide-arrow-next" src="{{ asset('build/images/right_arrow.png')}}"
+                    alt="Fleche de droite pour naviguer dans les avis">
+                <ul class="slides-container" id="slides-container">
+                   {# {% for opinion in opinions %} #}
+                    <li class="slide">
+                        <div>
+                           {# {% for i in 1..opinion.note %} #}
+                            <img id="star" src="{{ asset('build/images/star.png')}}" alt="">
+                           {#} {% endfor %} {#}
+                        </div>
+                        <div class="customers_opinion_description">
+                           {# {{ opinion.description }} #}
+                        </div>
+                        <div class="customers_opinion_name">
+                          {#  {{ opinion.clientName }} #}
+                        </div>
+                    </li>
+                   {#} {% endfor %} {#}
+                </ul>
+            </section>
+        </div>    
     </section>
 </main>
 {% endblock %}

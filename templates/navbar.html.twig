@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <title>{% block title %}{% endblock %}</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="{{asset('images/favicon.svg') }}">
-</head>
 {% block stylesheets %}
 {{ encore_entry_link_tags('header') }}
 {% endblock %}
@@ -33,7 +23,7 @@
                                 alt="un logo home pour revenir à l'accueil du site"></li>
                     </a>
                     <li class="dropdown-mobile" id="dropdown-mobile">
-                        <a class="dropdown-menu-mobile" id="dropdown-menu-mobile">La Kinésiologie</a>
+                        <a href="{{ path('kinesiologie') }}" class="dropdown-menu-mobile" id="dropdown-menu-mobile">La Kinésiologie</a>
                     </li>
                     <a href="#">
                         <li>Infos pratiques</li>
@@ -48,13 +38,13 @@
             </div>
             <div id="left_link_container">
                 <span>
-                    <a href="index.php">
+                    <a href="{{path('home') }}">
                         <img id="home_logo" src="{{asset('build/images/logo_website_home.png') }}"
                             alt="un logo home pour revenir à l'accueil du site">
                     </a>
                 </span>
                 <span class="dropdown">
-                    <a class="dropdown-menu">La Kinésiologie</a>
+                    <a href="{{ path('kinesiologie') }}" class="dropdown-menu">La Kinésiologie</a>
                 </span>
                 <span>
                     <a href="/">Infos pratiques</a>
