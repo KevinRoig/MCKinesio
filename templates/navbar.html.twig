@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{asset('images/favicon.svg') }}">
+</head>
+{% block stylesheets %}
+{{ encore_entry_link_tags('header') }}
+{% endblock %}
+
+{% block javascripts %}
+{{ encore_entry_script_tags('header') }}
+{% endblock %}
+
+{% block navbar %}
+<nav id="nav_bar">
+    <div id="main_container">
+        <div id="link_container">
+            <div id="menuToggle">
+                <input type="checkbox" id="burger" />
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="menu">
+                    <a href="{{path('home') }}">
+                        <li><img id="home_logo" src="{{asset('build/images/logo_website_home.png') }}"
+                                alt="un logo home pour revenir à l'accueil du site"></li>
+                    </a>
+                    <li class="dropdown-mobile" id="dropdown-mobile">
+                        <a class="dropdown-menu-mobile" id="dropdown-menu-mobile">La Kinésiologie</a>
+                    </li>
+                    <a href="#">
+                        <li>Infos pratiques</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                    <a href="{{ path('about_me') }}">
+                        <li>À propos</li>
+                    </a>
+                </ul>
+            </div>
+            <div id="left_link_container">
+                <span>
+                    <a href="index.php">
+                        <img id="home_logo" src="{{asset('build/images/logo_website_home.png') }}"
+                            alt="un logo home pour revenir à l'accueil du site">
+                    </a>
+                </span>
+                <span class="dropdown">
+                    <a class="dropdown-menu">La Kinésiologie</a>
+                </span>
+                <span>
+                    <a href="/">Infos pratiques</a>
+                </span>
+            </div>
+            <div id="center_link_container">
+                <span>
+                    <a href="{{ path('home') }}">
+                        <div id="logo">
+                            <img src="{{asset('build/images/logo_MCK_transparent_green.png') }}" alt="Le logo du cabinet de Kinésiologie"
+                                width="450px">
+                        </div>
+                    </a>
+                </span>
+
+            </div>
+            <div id="right_link_container">
+                <span>
+                    <a href="/">Contact</a>
+                </span>
+                <span>
+                    <a href="{{ path('about_me') }}">À propos</a>
+                </span>
+            </div>
+            <div id="responsive_separator"></div>
+        </div>
+    </div>
+</nav>
+{% endblock navbar %}
+
+<body>
+    {% block body %}{% endblock %}
+</body>
+
+</html>

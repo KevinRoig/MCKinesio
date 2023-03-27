@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}A propos{% endblock %}
+
+{% block stylesheets %}
+{{ encore_entry_link_tags('index') }}
+{% endblock %}
+
+{% block javascripts %}
+{{ encore_entry_script_tags('index') }}
+{% endblock %}
+
+{% block body %}
+<section class="first_section">
+    <div class="left_container">
+        <div class="image_and_text">
+            <img src="{{asset('build/images/logo_MCK_transparent_ocre.png') }}" alt="Le logo du cabinet de Kinésiologie">
+            <p> Je suis une phrase d'accroche, c'est cool hein?! Mais en fait, ici il faut détailler plus, vu que c'est la page où qu'c'est qu'on détaille plus alors hop, au boulot, détaille-moi tout ça!</p>
+        </div>
+    </div>
+    <div class="right_container">
+        <img src="{{asset('build/images/mathilde_full_3.png') }}" alt="Une photo de Mathilde Courgeon, Kinésiologue">
+    </div>
+
+</section>
+</main>
+{% endblock %}
