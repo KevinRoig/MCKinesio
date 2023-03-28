@@ -1,0 +1,30 @@
+{% block stylesheets %}
+{{ encore_entry_link_tags('footer') }}
+{% endblock %}
+
+{% block javascripts %}
+{{ encore_entry_script_tags('footer') }}
+{% endblock %}
+
+{% block footer %}
+<footer id="footer">
+        <div id="footer_link_container">
+
+            <div id="footer_left_link_container">
+                <a href="{{ path('kinesiologie') }}" >La Kinésiologie</a>
+                <a href="{{path('practical_informations') }}">Infos pratiques</a>
+            </div>
+            <div id="footer_center_link_container">
+                <a href="{{ path('home') }}">
+                    <img id="footer_logo" src="{{asset('build/images/logo_MCK_transparent_green.png') }}"
+                        alt="Le logo du cabinet de Kinésiologie" width="450px">
+                </a>
+            </div>
+            <div id="footer_right_link_container">
+                <a href="{{ path('contact') }}">Contact</a>
+                <a href="{{ path('about_me') }}">À propos</a>
+                <a href="#">CGV</a>
+            </div>
+        </div>
+</footer>
+{% endblock footer %}
