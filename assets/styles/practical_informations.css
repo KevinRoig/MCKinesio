@@ -1,0 +1,145 @@
+.first_section, .fourth_section {
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.first_section h2,
+.third_section h2, 
+.fourth_section {
+    text-align: center;
+}
+
+.infos_container {
+    width: 100%;
+    display: flex;
+}
+
+.infos_container div {
+    width: 50%;
+}
+
+.infos_container img {
+    width: 100%;
+}
+
+.infos_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos_container p {
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.infos_details p a {
+    color: #286f6f;
+}
+
+.second_section, .fourth_section {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #e6bbaa;
+}
+
+.second_section_left {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin-right: 5rem;
+    align-items: center;
+    font-size: x-large;
+}
+
+.second_section_right {
+    width: 50%;
+}
+.second_section_right p {
+    font-size: large;
+    font-weight: bold;
+}
+
+.third_section {
+    width: 80%;
+    padding: 1rem;    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.third_section_infos_container {
+    flex-direction: row-reverse;
+}
+
+.map_and_text {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+.map_text {
+    width: 30%;
+}
+
+.map_text p {
+    color: black;
+    text-align: justify;
+    line-height: 1.5;
+    font-family: Lato;
+    font-size: 20px;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 45%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.fourth_section {
+    display: flex;
+    flex-direction: column ;
+    width: 100%;
+    margin: auto;
+    background-color: #e6bbaa;
+}
+
+.button_container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_container a {
+    max-width: 50vw;
+    height: 40px;
+    background-color: #ea9b6a;
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    padding: 5px 20px;
+}
+

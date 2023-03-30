@@ -25,10 +25,10 @@
                     <li class="dropdown-mobile" id="dropdown-mobile">
                         <a href="{{ path('kinesiologie') }}" class="dropdown-menu-mobile" id="dropdown-menu-mobile">La Kinésiologie</a>
                     </li>
-                    <a href="#">
+                    <a href="{{path('practical_informations') }}">
                         <li>Infos pratiques</li>
                     </a>
-                    <a href="#">
+                    <a href="{{ path('contact') }}">
                         <li>Contact</li>
                     </a>
                     <a href="{{ path('about_me') }}">
@@ -47,7 +47,7 @@
                     <a href="{{ path('kinesiologie') }}" class="dropdown-menu">La Kinésiologie</a>
                 </span>
                 <span>
-                    <a href="/">Infos pratiques</a>
+                    <a href="{{path('practical_informations') }}">Infos pratiques</a>
                 </span>
             </div>
             <div id="center_link_container">
@@ -63,7 +63,7 @@
             </div>
             <div id="right_link_container">
                 <span>
-                    <a href="/">Contact</a>
+                    <a href="{{ path('contact') }}">Contact</a>
                 </span>
                 <span>
                     <a href="{{ path('about_me') }}">À propos</a>
