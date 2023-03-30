@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{{asset ('build/images/favicon.ico') }}">
-    {% block stylesheets %}
+    {% block stylesheets %}{{ encore_entry_link_tags('header') }}
+
     {% endblock %}
 
     {% block javascripts %}
@@ -18,8 +19,9 @@
     {% block navbar %}
         {% include "navbar.html.twig" %}
     {% endblock navbar %}
-
+<section class="main_container">
     {% block body %}{% endblock %}
+</section>
     {% block footer %} {% include "footer.html.twig" %}
     {% endblock footer %}
 </body>

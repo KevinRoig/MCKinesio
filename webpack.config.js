@@ -25,6 +25,7 @@ Encore
     .addEntry('index', './assets/index.js')
     .addEntry('kinesiologie', './assets/kinesiologie.js')
     .addEntry('practical_informations', './assets/practical_informations.js')
+    .addEntry('contact', './assets/contact.js')
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     .enableStimulusBridge('./assets/controllers.json')
