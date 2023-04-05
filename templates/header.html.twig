@@ -6,7 +6,7 @@
 {{ encore_entry_script_tags('header') }}
 {% endblock %}
 
-{% block navbar %}
+{% block header %}
 <nav id="nav_bar">
     <div id="main_container">
         <div id="link_container">
@@ -39,7 +39,7 @@
             <div id="left_link_container">
                 <span id="home_logo_container">
                     <a href="{{path('home') }}">
-                        <img id="home_logo" src="{{asset('build/images/logo_website_home.png') }}"
+                        <img id="home_logo" src="{{asset('build/images/logo_website_home_green.png') }}"
                             alt="un logo home pour revenir à l'accueil du site">
                     </a>
                 </span>
@@ -73,7 +73,7 @@
         </div>
     </div>
 </nav>
-{% endblock navbar %}
+{% endblock header %}
 
 <body>
     {% block body %}{% endblock %}
