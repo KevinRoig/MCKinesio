@@ -17,13 +17,27 @@
     <h2>Réservation</h2>
     <div class="infos_container">
         <div class="infos_details">
-            <p>Vous pouvez réserver directement un créneau ou me contacter pour toute question. 
+            <p>Vous pouvez réserver directement un créneau ou me contacter pour toute question.
             </p>
         </div>
-        <span class="button_container">
-            <a href="{{ path('contact') }}" id="button"> Réservation </a>
-        </span>
+        <!-- Début de widget en ligne Calendly -->
+        <div class="calendly-inline-widget"
+            data-url="https://calendly.com/courgeon-mathilde-kinesiologie/rdv-kinesiologie?hide_gdpr_banner=1&primary_color=286f6f&background_color=fff3ee"
+            style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Fin de widget en ligne Calendly -->
     </div>
+    <span class="button_container">
+        <!-- Début de widget de lien Calendly -->
+        <div class="calendly_container">
+            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+            <a href=""
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/courgeon-mathilde-kinesiologie/rdv-kinesiologie?primary_color=286f6f'});return false;">Réservation</a>
+
+        </div>
+        <!-- Fin de widget de lien Calendly -->
+    </span>
 </section>
 <section class="third_section">
     <h2>Informations pratiques</h2>
@@ -46,7 +60,8 @@
                 Je vous reçois de 8h30 à 18h00 du lundi au samedi.
             </p>
             <p>
-                Mon local ne me permet malheureusement pas de recevoir des personnes en fauteuil roulant, mais je peux me déplacer à domicile. <br> Contactez-moi pour en discuter!
+                Mon local ne me permet malheureusement pas de recevoir des personnes en fauteuil roulant, mais je peux
+                me déplacer à domicile. <br> Contactez-moi pour en discuter!
             </p>
         </div>
     </div>

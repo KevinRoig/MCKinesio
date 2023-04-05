@@ -1,22 +1,42 @@
 .first_section {
-    display: flex;
-    flex-direction: column ;
-    width: 80%;
-    padding: 1rem;
+    width: 100%;
+    text-align: center;
     margin: auto;
+    background-color: #fff3ee;
+    padding: 2rem 0 0 0;
 }
 
 .first_section h2,
 .third_section h2 {
     text-align: center;
 }
+
+.first_section h2 {
+    margin-bottom: 0;
+}
+
+.first_section .infos_details {
+    width: 100%;
+}
+
+.calendly-inline-widget {
+    top: -50px;
+    position: relative;
+    min-width: 320px;
+    height: 700px;
+    width: 100%;
+}
+
+.calendly_container {
+    display: none;
+}
+
 .infos_container {
     width: 100%;
     display: flex;
-}
-
-.infos_container div {
-    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .infos_container img {
@@ -41,7 +61,7 @@
 }
 
 .button_container {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,9 +81,10 @@
     line-height: 40px;
     padding: 5px 20px;
 }
+
 .third_section {
     width: 80%;
-    padding: 1rem;    
+    padding: 1rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -107,4 +128,33 @@
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+
+
+/* --------------------- MEDIA QUERIES ---------------------------- */
+
+@media only screen and (max-width: 800px) {
+    .first_section {
+        width: 100vw;
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .calendly_container {
+        display: block;
+    }
+    
+    .contact {
+        top: unset;
+    }
+
+    .third_section .button_container {
+        margin-bottom: 1rem;
+    }
+
+    .calendly-inline-widget {
+        display: none;
+    }
 }

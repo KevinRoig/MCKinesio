@@ -16,12 +16,12 @@
 </head>
 
 <body>
-    {% block navbar %}
-        {% include "navbar.html.twig" %}
-    {% endblock navbar %}
-<section class="main_container">
+    {% block header %}
+        {% include "header.html.twig" %}
+    {% endblock header %}
+<main class="main_container">
     {% block body %}{% endblock %}
-</section>
+</main>
     {% block footer %} {% include "footer.html.twig" %}
     {% endblock footer %}
 </body>
