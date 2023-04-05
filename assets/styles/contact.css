@@ -1,3 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+
+button {
+
+    margin-top: 1rem;
+    text-align: center;
+    color: #41403e;
+    background: transparent;
+    padding: 1rem 1rem;
+    transition: all 0.5s ease;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    outline: none;
+    box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.6);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+/*
+      Above is shorthand for:
+      border-top-left-radius: 255px 15px;
+      border-top-right-radius: 15px 225px;
+      border-bottom-right-radius: 225px 15px;
+      border-bottom-left-radius:15px 255px;
+      */
+button:hover {
+    box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.6);
+
+} 
+
+input, textarea {
+
+    margin-top: 1rem;
+    text-align: center;
+    color: #41403e;
+    background: transparent;
+    padding: 1rem 1rem;
+    transition: all 0.5s ease;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    outline: none;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+
 .first_section {
     width: 100%;
     text-align: center;
@@ -7,8 +51,21 @@
 }
 
 .first_section h2,
+.second_section h2,
 .third_section h2 {
     text-align: center;
+}
+
+.second_section {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.second_section div {
+    width: 80%;
+    margin: auto;
 }
 
 .first_section h2 {
@@ -132,6 +189,9 @@
 
 
 
+
+
+
 /* --------------------- MEDIA QUERIES ---------------------------- */
 
 @media only screen and (max-width: 800px) {
@@ -145,7 +205,7 @@
     .calendly_container {
         display: block;
     }
-    
+
     .contact {
         top: unset;
     }
