@@ -12,6 +12,10 @@
     align-items: center;
 }
 
+.left_container .image_and_text {
+    color: #0D4442;
+}
+
 .right_container {
     width: 50%;
     padding: 2rem 0;
@@ -27,12 +31,11 @@
 .button_container a {
     max-width: 50vw;
     height: 40px;
-    background-color: #ea9b6a;
+    background-color: #286f6f;
     border-radius: 50px;
     border: none;
     color: #ffffff;
     font-size: 20px;
-    font-weight: bold;
     cursor: pointer;
     text-align: center;
     line-height: 40px;
@@ -40,7 +43,7 @@
 }
 
 .first_section {
-    background-color: #fff3ee;
+    background-color: #FFFFFF;
 }
 
 .right_container img {
@@ -55,6 +58,8 @@
     text-align: center;
     margin: auto;
     padding: 2rem 0;
+    background-color: #EA9B6A;
+    color: #FFFFFF;
 }
 
 .second_section div {
@@ -66,8 +71,9 @@
     width: 100%;
     text-align: center;
     margin: auto;
-    background-color: #fff3ee;
+    background-color: #FFFFFF;
     padding: 2rem 0 0 0;
+    color: #286F6F;
 }
 
 .calendly_container {
@@ -86,7 +92,9 @@
 .fourth_section {
     width: 100%;
     margin: auto;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    background-color: #EA9B6A;
+    color: #FFFFFF;
 }
 
 .fourth_section div {
@@ -121,11 +129,12 @@
 .infos_container p {
     padding: 1rem;
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 2rem;
+    font-size: large;
 }
 
 .infos_details p a {
-    color: #286f6f;
+    color: #0d4442;
 }
 
 .fifth_section {
@@ -157,11 +166,11 @@
     color: #ffffff;
     width: 90%;
     text-align: center;
+    font-size: large;
 }
 
 .customers_opinion_name {
     color: #ffffff;
-    font-weight: bolder;
 }
 
 /* --------------------- CAROUSEL ---------------------------- */
@@ -296,6 +305,11 @@
         margin-bottom: 1rem;
     }
 
+    .third_section p {
+        width: 94%;
+        margin: 1rem auto;
+    }
+
     .calendly-inline-widget {
         display: none;
     }
@@ -325,8 +339,12 @@
 
     #customers_opinion {
         width: 90vw;
-        height: 200px;
+        height: 240px;
         margin: 0 auto;
+    }
+
+    #customers_opinion_title {
+        height: 12%;
     }
 
     #customers_opinion_title p {
@@ -341,7 +359,7 @@
     }
 
     .slides-container {
-        height: 75%;
+        height: 84%;
     }
 
     #star {

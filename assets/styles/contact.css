@@ -27,7 +27,7 @@ button:hover {
 
 } 
 
-input, textarea {
+input, textarea, label {
 
     margin-top: 1rem;
     text-align: center;
@@ -63,25 +63,28 @@ input, textarea {
     padding: 2rem 0;
 }
 
-.second_section div {
-    width: 80%;
-    margin: auto;
-}
-
 .first_section h2 {
     margin-bottom: 0;
 }
 
 .first_section .infos_details {
-    width: 100%;
+    width: 94%;
+    margin: auto;
+}
+
+.first_section .infos_details p {
+    padding: 0;
 }
 
 .calendly-inline-widget {
-    top: -50px;
-    position: relative;
     min-width: 320px;
     height: 700px;
     width: 100%;
+}
+.calendly-inline-widget iframe
+{
+    top: -50px;
+    position: relative;
 }
 
 .calendly_container {
@@ -139,6 +142,33 @@ input, textarea {
     padding: 5px 20px;
 }
 
+.second_section {
+    width: 80%;
+    margin: auto;
+}
+
+#contact_nom, #contact_prenom, #contact_telephone, #contact_email {
+    width: 50%;
+    padding: 1rem 0;
+}
+
+.message {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message label {
+    margin-top: 1rem;
+}
+
+#contact_message {
+    resize: none;
+    margin-top: 0;
+    height: 80px;
+}
+
 .third_section {
     width: 80%;
     padding: 1rem;
@@ -187,11 +217,6 @@ input, textarea {
     position: absolute;
 }
 
-
-
-
-
-
 /* --------------------- MEDIA QUERIES ---------------------------- */
 
 @media only screen and (max-width: 800px) {
@@ -202,12 +227,36 @@ input, textarea {
         flex-direction: column;
     }
 
+    .infos_details {
+        width: 94%;
+    }
+
     .calendly_container {
         display: block;
     }
 
+    .second_section {
+        padding-top: 1rem;
+    }
+
     .contact {
         top: unset;
+    }
+
+    #contact_nom, #contact_prenom, #contact_telephone, #contact_email {
+        width: 80%;
+        padding: 1rem 0;
+    }
+    
+    .message {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .message label {
+        margin-top: 1rem;
     }
 
     .third_section .button_container {
