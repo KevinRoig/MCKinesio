@@ -111,9 +111,9 @@ input, textarea, label {
 }
 
 .infos_container p {
-    padding: 1rem;
+    margin-bottom: 0;
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 .infos_details p a {
@@ -170,8 +170,8 @@ input, textarea, label {
 }
 
 .third_section {
-    width: 80%;
-    padding: 1rem;
+    width: 100%;
+    padding: 1rem 0;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -180,6 +180,13 @@ input, textarea, label {
 
 .third_section_infos_container {
     flex-direction: row-reverse;
+    width: 90%;
+    margin: 1rem auto 2rem;
+    position: relative;
+}
+
+.third_section .infos_details {
+    width: 45%;
 }
 
 .map_and_text {
@@ -203,18 +210,14 @@ input, textarea, label {
 }
 
 .map-responsive {
-    overflow: hidden;
-    padding-bottom: 45%;
     position: relative;
-    height: 0;
+    width: 45%;
+    align-self: normal;
 }
 
 .map-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 /* --------------------- MEDIA QUERIES ---------------------------- */
@@ -257,6 +260,21 @@ input, textarea, label {
     
     .message label {
         margin-top: 1rem;
+    }
+
+    .third_section_infos_container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .third_section .infos_details {
+        width: 90%;
+    }
+
+    #map {
+        width: 100%;
+        height: 300px;
+        text-align: center;
     }
 
     .third_section .button_container {
