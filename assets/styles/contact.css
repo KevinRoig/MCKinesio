@@ -1,10 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+.flash_container {
+    width: 80%;
+    background: linear-gradient(90deg, rgba(234, 155, 106, 1) 0%, rgba(244, 177, 136, 1) 100%);
+    color: #ffffff;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
 
 button {
-
-    margin-top: 1rem;
+    margin-top: 2rem;
     text-align: center;
-    color: #41403e;
+    color: #ffffff;
     background: transparent;
     padding: 1rem 1rem;
     transition: all 0.5s ease;
@@ -12,42 +19,35 @@ button {
     letter-spacing: 1px;
     outline: none;
     box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.6);
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: 2px solid white;
 }
 
-/*
-      Above is shorthand for:
-      border-top-left-radius: 255px 15px;
-      border-top-right-radius: 15px 225px;
-      border-bottom-right-radius: 225px 15px;
-      border-bottom-left-radius:15px 255px;
-      */
 button:hover {
     box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.6);
+}
 
-} 
-
-input, textarea, label {
+input,
+textarea,
+label {
 
     margin-top: 1rem;
     text-align: center;
-    color: #41403e;
+    color: #ffffff;
     background: transparent;
-    padding: 1rem 1rem;
     transition: all 0.5s ease;
     font-size: 1rem;
     letter-spacing: 1px;
-    outline: none;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: none;
+    border-bottom: 1px solid white;
 }
 
 
 .first_section {
-    width: 100%;
+    width: 80%;
     text-align: center;
     margin: auto;
-    background-color: #fff3ee;
-    padding: 2rem 0 0 0;
+    padding: 2rem 0 2rem 0;
+    color: #286f6f;
 }
 
 .first_section h2,
@@ -57,10 +57,12 @@ input, textarea, label {
 }
 
 .second_section {
-    width: 100%;
+    width: 80%;
     text-align: center;
     margin: auto;
     padding: 2rem 0;
+    background: linear-gradient(90deg, rgba(234, 155, 106, 1) 0%, rgba(244, 177, 136, 1) 100%);
+    color: #ffffff;
 }
 
 .first_section h2 {
@@ -81,8 +83,8 @@ input, textarea, label {
     height: 700px;
     width: 100%;
 }
-.calendly-inline-widget iframe
-{
+
+.calendly-inline-widget iframe {
     top: -50px;
     position: relative;
 }
@@ -117,7 +119,8 @@ input, textarea, label {
 }
 
 .infos_details p a {
-    color: #286f6f;
+    color: #0d4442;
+    text-decoration: underline;
 }
 
 .button_container {
@@ -130,7 +133,7 @@ input, textarea, label {
 .button_container a {
     max-width: 50vw;
     height: 40px;
-    background-color: #ea9b6a;
+    background-color: #286f6f;
     border-radius: 50px;
     border: none;
     color: #ffffff;
@@ -142,14 +145,22 @@ input, textarea, label {
     padding: 5px 20px;
 }
 
-.second_section {
-    width: 80%;
-    margin: auto;
+#contact_nom,
+#contact_prenom,
+#contact_telephone,
+#contact_email {
+    width: 50%;
+    padding: 2rem 0 0.2rem 0;
+    color: #286f6f;
 }
 
-#contact_nom, #contact_prenom, #contact_telephone, #contact_email {
-    width: 50%;
-    padding: 1rem 0;
+#contact_nom:focus-visible,
+#contact_prenom:focus-visible,
+#contact_telephone:focus-visible,
+#contact_email:focus-visible,
+#contact_message:focus-visible {
+    border: 1px white solid;
+    outline: none;
 }
 
 .message {
@@ -160,22 +171,24 @@ input, textarea, label {
 }
 
 .message label {
-    margin-top: 1rem;
+    margin-top: 2rem;
+    border: none;
 }
 
 #contact_message {
     resize: none;
-    margin-top: 0;
     height: 80px;
+    color: #286f6f;
 }
 
 .third_section {
-    width: 100%;
+    width: 80%;
     padding: 1rem 0;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    color: #286f6f;
 }
 
 .third_section_infos_container {
@@ -223,15 +236,24 @@ input, textarea, label {
 /* --------------------- MEDIA QUERIES ---------------------------- */
 
 @media only screen and (max-width: 800px) {
+    button {
+        box-shadow: none;
+        transition: none;
+    }
+
+    button:hover {
+        box-shadow: none;
+    }
+
     .first_section {
-        width: 100vw;
-        padding: 1rem 0;
+        width: 90%;
+        padding: 0rem 0 2rem 0;
         display: flex;
         flex-direction: column;
     }
 
     .infos_details {
-        width: 94%;
+        width: 100%;
     }
 
     .calendly_container {
@@ -239,6 +261,7 @@ input, textarea, label {
     }
 
     .second_section {
+        width: 90%;
         padding-top: 1rem;
     }
 
@@ -246,29 +269,36 @@ input, textarea, label {
         top: unset;
     }
 
-    #contact_nom, #contact_prenom, #contact_telephone, #contact_email {
+    #contact_nom,
+    #contact_prenom,
+    #contact_telephone,
+    #contact_email {
         width: 80%;
         padding: 1rem 0;
     }
-    
+
     .message {
         width: 80%;
         margin: auto;
         display: flex;
         flex-direction: column;
     }
-    
+
     .message label {
         margin-top: 1rem;
     }
 
-    .third_section_infos_container {
+    .third_section {
         width: 90%;
+    }
+
+    .third_section_infos_container {
+        width: 100%;
         flex-direction: column;
     }
 
     .third_section .infos_details {
-        width: 90%;
+        width: 100%;
     }
 
     #map {

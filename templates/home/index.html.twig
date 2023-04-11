@@ -10,18 +10,14 @@
 {{ encore_entry_script_tags('index') }}
 {% endblock %}
 {% block body %}
-<main>
     <section class="first_section">
         <div class="left_container">
             <div class="image_and_text">
-                <p> Je suis une phrase d'accroche, c'est cool hein?!!!</p>
+                <p> Début de description de la kinésio</p>
             </div>
-            <span class="button_container">
-                <a href="{{ path('about_me') }}" id="button"> Me découvrir </a>
-            </span>
         </div>
         <div class="right_container">
-            <img src="{{asset('build/images/mathilde_full_3.png') }}"
+            <img src="{{asset('build/images/Test-musculaire-kisnesiologie.jpg') }}"
                 alt="Une photo de Mathilde Courgeon, Kinésiologue">
         </div>
     </section>
@@ -63,7 +59,7 @@
     <!-- Fin de widget de lien Calendly -->
         </span>
         <span class="button_container contact">
-            <a href="{{ path('contact') }}" id="button"> Contact </a>
+            <a href="{{ path('contact')}}" id="button"> Contact </a>
         </span>
     </section>
 
@@ -87,8 +83,22 @@
             </div>
         </div>
     </section>
-
     <section class="fifth_section">
+        <div class="left_container">
+            <div class="image_and_text">
+                <p> Je suis une phrase d'accroche, c'est cool hein?!!!</p>
+            </div>
+            <span class="button_container">
+                <a href="{{ path('about_me') }}" id="button"> Me découvrir </a>
+            </span>
+        </div>
+        <div class="right_container">
+            <img src="{{asset('build/images/mathilde_full_3.png') }}"
+                alt="Une photo de Mathilde Courgeon, Kinésiologue">
+        </div>
+    </section>
+
+    <section class="sixth_section">
         <div id="customers_opinion">
             <section class="slider-wrapper">
                 <div id="customers_opinion_title">
@@ -119,5 +129,4 @@
             </section>
         </div>
     </section>
-</main>
 {% endblock %}
