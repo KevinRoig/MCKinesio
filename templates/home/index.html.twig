@@ -30,7 +30,7 @@
             </p>
         </div>
         <span class="button_container">
-            <a href="{{ path('kinesiologie') }}" id="button"> Découvrir la kinésiologie </a>
+            <a href="{{ path('kinesiologie') }}" class="button"> Découvrir la kinésiologie </a>
         </span>
     </section>
 
@@ -59,7 +59,7 @@
     <!-- Fin de widget de lien Calendly -->
         </span>
         <span class="button_container contact">
-            <a href="{{ path('contact')}}" id="button"> Contact </a>
+            <a href="{{ path('contact')}}" class="button"> Contact </a>
         </span>
     </section>
 
@@ -72,13 +72,20 @@
             </div>
             <div class="infos_details">
                 <p>Mon cabinet est situé au 110, rue du Rempart, à Tours. <br><br>
-                    Je suis joignable au <a href="tel:+33674752172">06 00 00 00 00</a> , <br> par <a
-                        href="{{path('contact') }}">le formulaire de contact,</a> <br> ou par mail : <a href="mailto:"><span
-                            style="unicode-bidi:bidi-override; direction: rtl;">
-                            moc.tset@tcatnoc</span></a>
+                    Je suis joignable au <a href="tel:+33749588520">07 49 58 85 20</a> , <br> par <a
+                        href="{{path('contact') }}">le formulaire de contact,</a> <br> ou par mail :
+                    <script type="text/JavaScript">
+                        var part1 = "contact";
+                        var part2 = Math.pow(2,6);
+                        var part3 = String.fromCharCode(part2);
+                        var part4 = "mc-kinesiologie.fr"
+                        var part5 = part1 + String.fromCharCode(part2) + part4;
+                        document.write("<a href=" + "mai" + "lto" + ":" + part5 + ">" + part1 + part3 + part4 + "</a>");
+                    </script>
+                    </a>
                 </p>
                 <span class="button_container">
-                    <a href="{{ path('practical_informations') }}" id="button"> En savoir + </a>
+                    <a href="{{ path('practical_informations') }}" class="button"> En savoir + </a>
                 </span>
             </div>
         </div>
@@ -89,7 +96,7 @@
                 <p> Je suis une phrase d'accroche, c'est cool hein?!!!</p>
             </div>
             <span class="button_container">
-                <a href="{{ path('about_me') }}" id="button"> Me découvrir </a>
+                <a href="{{ path('about_me') }}" class="button"> Me découvrir </a>
             </span>
         </div>
         <div class="right_container">
@@ -114,7 +121,7 @@
                     <li class="slide">
                         <div>
                             {% for i in 1..opinion.note %}
-                            <img id="star" src="{{ asset('build/images/star.png')}}" alt="">
+                            <img class="star" src="{{ asset('build/images/star.png')}}" alt="">
                             {% endfor %}
                         </div>
                         <div class="customers_opinion_description">

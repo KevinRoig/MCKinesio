@@ -233,7 +233,7 @@
     border-radius: 2rem 0 0 2rem;
 }
 
-#star {
+.star {
     height: 30px;
     margin: 0 4px;
 }
@@ -368,7 +368,7 @@
         height: 84%;
     }
 
-    #star {
+    .star {
         height: 20px;
         margin: 0 4px;
     }

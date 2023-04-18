@@ -127,10 +127,17 @@
         </div>
         <div class="infos_details">
             <p>Mon cabinet est situé au 110, rue du Rempart, à Tours. <br><br>
-                Je suis joignable au <a href="tel:+33674752172">06 00 00 00 00</a> , <br> par <a
-                    href="{{path('contact') }}">le formulaire de contact,</a> <br> ou par mail : <a href="mailto:"><span
-                        style="unicode-bidi:bidi-override; direction: rtl;">
-                        moc.tset@tcatnoc</span></a>
+                Je suis joignable au <a href="tel:+33749588520">07 49 58 85 20</a> , <br> par <a
+                    href="{{path('contact') }}">le formulaire de contact,</a> <br> ou par mail :
+                <script type="text/JavaScript">
+                    var part1 = "contact";
+                    var part2 = Math.pow(2,6);
+                    var part3 = String.fromCharCode(part2);
+                    var part4 = "mc-kinesiologie.fr"
+                    var part5 = part1 + String.fromCharCode(part2) + part4;
+                    document.write("<a href=" + "mai" + "lto" + ":" + part5 + ">" + part1 + part3 + part4 + "</a>");
+                </script>
+                </a>
             </p>
             <p>
                 Je vous reçois de 8h30 à 18h00 du lundi au samedi.

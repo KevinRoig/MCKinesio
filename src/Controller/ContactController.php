@@ -24,12 +24,15 @@ class ContactController extends AbstractController
 
             $message = (new Email())
                 ->from($contactFormData['email'])
-                ->to('kevinroig@hotmail.com')
-                ->subject('Vous avez reçu une demande d\'informations')
-                ->text('Envoyé par : ' . $contactFormData['nom'] .' ' . $contactFormData['prenom'] .PHP_EOL .
+                ->to('contact@mc-kinesiologie.fr')
+                ->subject('Demande d\'informations ou de rdv pour le cabinet de Kinésiologie')
+                ->text('Envoyé par :' .PHP_EOL .
+                    '   Nom : ' . $contactFormData['nom'] .PHP_EOL . 
+                    '   Prénom : ' . $contactFormData['prenom'] .PHP_EOL .
                     'Adresse mail :' .  $contactFormData['email'] . PHP_EOL .
                     'Téléphone : ' . $contactFormData['telephone'] . PHP_EOL . 
-                    'Message du client : ' . $contactFormData['message']);
+                    'Message du client : ' .PHP_EOL . 
+                    $contactFormData['message']);
                     $mailer->send($message);
                     $this->addFlash('success', 'Votre message a bien été envoyé.');
 

@@ -28,10 +28,12 @@
         <!-- Début de widget en ligne Calendly -->
         <div class="calendly-inline-widget"
             data-url="https://calendly.com/courgeon-mathilde-kinesiologie/rdv-kinesiologie?hide_gdpr_banner=1&primary_color=286f6f&background_color=F9F9F9&text_color=0d4442"
-            style="min-width:320px;height:700px;">        <div class="infos_details">
+            style="min-width:320px;height:700px;">
+            <div class="infos_details">
                 <p>Vous pouvez réserver directement un créneau en utilisant le calendrier.
                 </p>
-            </div></div>
+            </div>
+        </div>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         <!-- Fin de widget en ligne Calendly -->
     </div>
@@ -55,7 +57,7 @@
     <h2>Contact</h2>
     <div>
         <p>Pour me contacter rapidement, merci de remplir le formulaire suivant. <br>
-        Je reviendrais vers vous dès que possible.</p>
+            Je reviendrais vers vous dès que possible.</p>
     </div>
     <div class="form_container">
         <div class="form">
@@ -72,7 +74,7 @@
                     {{form_widget(form.prenom) }}
                 </div>
             </div>
-    
+
             <div class=" telephone_email">
                 <div class=" telephone">
                     {{form_errors(form.telephone) }}
@@ -85,20 +87,22 @@
                     {{form_widget(form.email) }}
                 </div>
             </div>
-    
+
             <div class=" message">
                 {{form_errors(form.message) }}
                 {{form_label(form.message) }}
                 {{form_widget(form.message) }}
             </div>
-    
+
             {{ form_row(form._token) }}
             <div id="contact_button_container">
-                <button type="submit" class="lined thick" id="form_button">{{ button_label|default('Envoyer la demande') }}</button>
+                <button type="submit" class="lined thick" id="form_button">{{ button_label|default('Envoyer la demande')
+                    }}</button>
             </div>
-    
+
             {{form_end(form) }}
         </div>
+    </div>
 </section>
 <section class="third_section">
     <h2>Informations pratiques</h2>
@@ -112,10 +116,17 @@
         </div>
         <div class="infos_details">
             <p>Mon cabinet est situé au 110, rue du Rempart, à Tours. <br><br>
-                Je suis joignable au <a href="tel:+33674752172">06 00 00 00 00</a> , <br> par <a
-                    href="{{path('contact') }}">le formulaire de contact,</a> <br> ou par mail : <a href="mailto:"><span
-                        style="unicode-bidi:bidi-override; direction: rtl;">
-                        moc.tset@tcatnoc</span></a>
+                Je suis joignable au <a href="tel:+33749588520">07 49 58 85 20</a> , <br> par <a
+                    href="{{path('contact') }}">le formulaire de contact,</a> <br> ou par mail :
+                <script type="text/JavaScript">
+                    var part1 = "contact";
+                    var part2 = Math.pow(2,6);
+                    var part3 = String.fromCharCode(part2);
+                    var part4 = "mc-kinesiologie.fr"
+                    var part5 = part1 + String.fromCharCode(part2) + part4;
+                    document.write("<a href=" + "mai" + "lto" + ":" + part5 + ">" + part1 + part3 + part4 + "</a>");
+                </script>
+                </a>
             </p>
             <p>
                 Je vous reçois de 8h30 à 18h00 du lundi au samedi.

@@ -45,6 +45,7 @@
 
 .infos_details p a {
     color: #286f6f;
+    text-decoration: underline;
 }
 
 .second_section {
