@@ -1,8 +1,8 @@
 .first_section {
-    width: 100%;
+    width: 80%;
     margin: auto;
     padding: 2rem 0;
-    background-color: #fff3ee;
+    color: #286f6f;
 }
 
 .first_section h2,
@@ -12,7 +12,7 @@
 }
 
 .infos_container {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,8 +36,8 @@
     justify-content: center;
 }
 
-.infos_container p {
-    padding: 1rem;
+.first_section .infos_container p {
+    padding: 1rem 1rem 0 1rem;
     text-align: justify;
     line-height: 1.5rem;
     margin-bottom: 0;
@@ -45,14 +45,18 @@
 
 .infos_details p a {
     color: #286f6f;
+    text-decoration: underline;
 }
 
 .second_section {
-    width: 100%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-around;
     padding: 1rem 0;
+    background: rgb(234, 155, 106);
+    background: linear-gradient(90deg, rgba(234, 155, 106, 1) 0%, rgba(244, 177, 136, 1) 100%);
+    color: #ffffff;
 }
 
 .second_section_left {
@@ -74,13 +78,13 @@
 }
 
 .third_section {
-    width: 100%;
+    width: 80%;
     padding: 1rem 0 3rem 0;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #fff3ee;
+    color: #286f6f;
 }
 
 .third_section_infos_container {
@@ -131,13 +135,27 @@
 .fourth_section {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: auto;
+    width: 80%;
+    margin: 0 auto 2rem auto;
     padding: 2rem 0;
+    background: rgb(234, 155, 106);
+    background: linear-gradient(90deg, rgba(234, 155, 106, 1) 0%, rgba(244, 177, 136, 1) 100%);
+    color: #ffffff;
 }
 
 .fourth_section .infos_container {
     flex-direction: column;
+}
+
+.fourth_section .infos_details {
+    width: 100%;
+    margin: auto;
+}
+
+.fourth_section .infos_details p {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
 }
 
 .fourth_section h2 {
@@ -154,7 +172,7 @@
 .button_container a {
     max-width: 50vw;
     height: 40px;
-    background-color: #ea9b6a;
+    background-color: #286f6f;
     border-radius: 50px;
     border: none;
     color: #ffffff;
@@ -171,7 +189,7 @@
 
 @media only screen and (max-width: 800px) {
     .first_section {
-        width: 98%;
+        width: 90%;
         padding: 1rem 0;
     }
 
@@ -190,6 +208,10 @@
 
     .infos_details {
         width: 100%;
+    }
+
+    .first_section .infos_details p {
+        padding: 1rem 0;
     }
 
     .third_section .infos_details p {
@@ -212,7 +234,7 @@
 
     .second_section,
     .third_section {
-        width: 94%;
+        width: 90%;
         padding: 1rem 0;
     }
 

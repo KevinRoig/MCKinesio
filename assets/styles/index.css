@@ -1,6 +1,8 @@
 .first_section {
     display: flex;
     justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
 }
 
 .left_container {
@@ -10,6 +12,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.left_container .image_and_text {
+    color: #0D4442;
 }
 
 .right_container {
@@ -27,20 +33,15 @@
 .button_container a {
     max-width: 50vw;
     height: 40px;
-    background-color: #ea9b6a;
+    background-color: #286f6f;
     border-radius: 50px;
     border: none;
     color: #ffffff;
     font-size: 20px;
-    font-weight: bold;
     cursor: pointer;
     text-align: center;
     line-height: 40px;
     padding: 5px 20px;
-}
-
-.first_section {
-    background-color: #fff3ee;
 }
 
 .right_container img {
@@ -51,10 +52,12 @@
 }
 
 .second_section {
-    width: 100%;
+    width: 80%;
     text-align: center;
     margin: auto;
     padding: 2rem 0;
+    background: linear-gradient(90deg, rgba(234, 155, 106, 1) 0%, rgba(244, 177, 136, 1) 100%);
+    color: #FFFFFF;
 }
 
 .second_section div {
@@ -63,11 +66,12 @@
 }
 
 .third_section {
-    width: 100%;
+    width: 80%;
     text-align: center;
     margin: auto;
-    background-color: #fff3ee;
+    background-color: #FFFFFF;
     padding: 2rem 0 0 0;
+    color: #286F6F;
 }
 
 .calendly_container {
@@ -84,27 +88,28 @@
 }
 
 .fourth_section {
-    width: 100%;
-    margin: auto;
-    padding: 1rem 0;
-}
-
-.fourth_section div {
     width: 80%;
     margin: auto;
+    padding: 2rem 0;
+    background: linear-gradient(90deg, rgba(234, 155, 106, 1) 0%, rgba(244, 177, 136, 1) 100%);
+    color: #FFFFFF;
 }
 
 .fourth_section h2 {
     text-align: center;
+    margin: 0 0 2rem 0;
 }
 
 .infos_container {
     width: 100%;
+    margin: auto;
     display: flex;
+    align-items: center;
 }
 
 .infos_container div {
     width: 50%;
+    margin: 0 2rem;
 }
 
 .infos_container img {
@@ -121,20 +126,31 @@
 .infos_container p {
     padding: 1rem;
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 2rem;
+    font-size: large;
 }
 
 .infos_details p a {
-    color: #286f6f;
+    color: white;
+    text-decoration: underline;
 }
 
 .fifth_section {
-    padding: 2rem 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+
+.sixth_section {
+    padding: 3rem 0;
 }
 
 #customers_opinion {
-    background-color: #e6bbaa;
-    height: 300px;
+    background: linear-gradient(90deg, rgba(244,198,180,1) 0%, rgba(230,187,170,1) 100%);
+        height: 300px;
     width: 80vw;
     margin: 0 auto;
     display: flex;
@@ -146,7 +162,7 @@
 }
 
 #customers_opinion_title p {
-    color: #ffffff;
+    color: #286F6F;
     font-size: xx-large;
     font-weight: bolder;
     text-align: center;
@@ -157,11 +173,11 @@
     color: #ffffff;
     width: 90%;
     text-align: center;
+    font-size: large;
 }
 
 .customers_opinion_name {
     color: #ffffff;
-    font-weight: bolder;
 }
 
 /* --------------------- CAROUSEL ---------------------------- */
@@ -217,7 +233,7 @@
     border-radius: 2rem 0 0 2rem;
 }
 
-#star {
+.star {
     height: 30px;
     margin: 0 4px;
 }
@@ -249,18 +265,19 @@
 
 @media only screen and (max-width: 800px) {
 
-    .first_section {
+    .first_section, .fifth_section {
         flex-direction: column-reverse;
         align-items: center;
+        width: 90%;
     }
 
     .left_container {
-        width: 98vw;
+        width: 100%;
         padding: 0 0 20px 0;
     }
 
     .right_container {
-        width: 98vw;
+        width: 100%;
         padding: 20px 0 0 0;
     }
 
@@ -269,16 +286,13 @@
         display: none;
     }
 
-    .right_container img {
-        max-width: 90%;
-    }
-
     .second_section {
+        width: 90%;
         padding: 1rem 0 2rem 0;
     }
 
     .third_section {
-        width: 100vw;
+        width: 90%;
         padding: 1rem 0;
         display: flex;
         flex-direction: column;
@@ -287,7 +301,7 @@
     .calendly_container {
         display: block;
     }
-    
+
     .contact {
         top: unset;
     }
@@ -296,12 +310,17 @@
         margin-bottom: 1rem;
     }
 
+    .third_section p {
+        width: 94%;
+        margin: 1rem auto;
+    }
+
     .calendly-inline-widget {
         display: none;
     }
 
     .fourth_section {
-        width: 100vw;
+        width: 90%;
         padding: 1rem 0;
     }
 
@@ -310,23 +329,28 @@
     }
 
     .fourth_section .infos_container div {
-        width: 94%;
+        width: 90%;
         margin: auto;
         text-align: center;
     }
 
     .fourth_section .infos_details p {
         padding: 0;
+        width: 100%;
     }
 
     .fourth_section img {
-        width: 90%;
+        width: 100%;
     }
 
     #customers_opinion {
         width: 90vw;
-        height: 200px;
+        height: 240px;
         margin: 0 auto;
+    }
+
+    #customers_opinion_title {
+        height: 12%;
     }
 
     #customers_opinion_title p {
@@ -341,10 +365,10 @@
     }
 
     .slides-container {
-        height: 75%;
+        height: 84%;
     }
 
-    #star {
+    .star {
         height: 20px;
         margin: 0 4px;
     }

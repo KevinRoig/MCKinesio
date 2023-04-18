@@ -13,31 +13,96 @@
 {% block title %}Contact{% endblock %}
 
 {% block body %}
+{% for message in app.flashes('success') %}
+<div class="flash_container">
+    <div class="success">
+        {{ message }}
+    </div>
+</div>
+
+{% endfor %}
 <section class="first_section">
     <h2>Réservation</h2>
     <div class="infos_container">
-        <div class="infos_details">
-            <p>Vous pouvez réserver directement un créneau ou me contacter pour toute question.
-            </p>
-        </div>
+
         <!-- Début de widget en ligne Calendly -->
         <div class="calendly-inline-widget"
-            data-url="https://calendly.com/courgeon-mathilde-kinesiologie/rdv-kinesiologie?hide_gdpr_banner=1&primary_color=286f6f&background_color=fff3ee"
-            style="min-width:320px;height:700px;"></div>
+            data-url="https://calendly.com/courgeon-mathilde-kinesiologie/rdv-kinesiologie?hide_gdpr_banner=1&primary_color=286f6f&background_color=F9F9F9&text_color=0d4442"
+            style="min-width:320px;height:700px;">
+            <div class="infos_details">
+                <p>Vous pouvez réserver directement un créneau en utilisant le calendrier.
+                </p>
+            </div>
+        </div>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         <!-- Fin de widget en ligne Calendly -->
     </div>
     <span class="button_container">
         <!-- Début de widget de lien Calendly -->
         <div class="calendly_container">
+            <div class="infos_details">
+                <p>Vous pouvez réserver directement un créneau en cliquant sur le bouton ci-dessous.
+                </p>
+            </div>
             <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
             <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
             <a href=""
-                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/courgeon-mathilde-kinesiologie/rdv-kinesiologie?primary_color=286f6f'});return false;">Réservation</a>
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/courgeon-mathilde-kinesiologie/rdv-kinesiologie?primary_color=286f6f&background_color=F9F9F9&text_color=0d4442'});return false;">Réservation</a>
 
         </div>
         <!-- Fin de widget de lien Calendly -->
     </span>
+</section>
+<section class="second_section" id="contact">
+    <h2>Contact</h2>
+    <div>
+        <p>Pour me contacter rapidement, merci de remplir le formulaire suivant. <br>
+            Je reviendrais vers vous dès que possible.</p>
+    </div>
+    <div class="form_container">
+        <div class="form">
+            {{ form_start(form) }}
+            <div class=" nom_prenom">
+                <div class=" nom">
+                    {{form_errors(form.nom) }}
+                    {{form_label(form.nom) }}
+                    {{form_widget(form.nom) }}
+                </div>
+                <div class=" prenom">
+                    {{form_errors(form.prenom) }}
+                    {{form_label(form.prenom) }}
+                    {{form_widget(form.prenom) }}
+                </div>
+            </div>
+
+            <div class=" telephone_email">
+                <div class=" telephone">
+                    {{form_errors(form.telephone) }}
+                    {{form_label(form.telephone) }}
+                    {{form_widget(form.telephone) }}
+                </div>
+                <div class=" email">
+                    {{form_errors(form.email) }}
+                    {{form_label(form.email) }}
+                    {{form_widget(form.email) }}
+                </div>
+            </div>
+
+            <div class=" message">
+                {{form_errors(form.message) }}
+                {{form_label(form.message) }}
+                {{form_widget(form.message) }}
+            </div>
+
+            {{ form_row(form._token) }}
+            <div id="contact_button_container">
+                <button type="submit" class="lined thick" id="form_button">{{ button_label|default('Envoyer la demande')
+                    }}</button>
+            </div>
+
+            {{form_end(form) }}
+        </div>
+    </div>
 </section>
 <section class="third_section">
     <h2>Informations pratiques</h2>
@@ -51,10 +116,17 @@
         </div>
         <div class="infos_details">
             <p>Mon cabinet est situé au 110, rue du Rempart, à Tours. <br><br>
-                Je suis joignable au <a href="tel:+33674752172">06 00 00 00 00</a> , par <a
-                    href="{{path('contact') }}">le formulaire de contact</a> ou par mail : <a href="mailto:"><span
-                        style="unicode-bidi:bidi-override; direction: rtl;">
-                        moc.tset@tcatnoc</span></a>
+                Je suis joignable au <a href="tel:+33749588520">07 49 58 85 20</a> , <br> par <a
+                    href="{{path('contact') }}">le formulaire de contact,</a> <br> ou par mail :
+                <script type="text/JavaScript">
+                    var part1 = "contact";
+                    var part2 = Math.pow(2,6);
+                    var part3 = String.fromCharCode(part2);
+                    var part4 = "mc-kinesiologie.fr"
+                    var part5 = part1 + String.fromCharCode(part2) + part4;
+                    document.write("<a href=" + "mai" + "lto" + ":" + part5 + ">" + part1 + part3 + part4 + "</a>");
+                </script>
+                </a>
             </p>
             <p>
                 Je vous reçois de 8h30 à 18h00 du lundi au samedi.
