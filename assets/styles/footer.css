@@ -75,14 +75,12 @@
 
     #footer_left_link_container, #footer_right_link_container {
         flex-direction: column;
-    }
-
-    #footer_center_link_container {
-        width: 25%;
+        text-align: center;
     }
 
     #footer_logo {
         visibility: visible;
+        margin: 0;
     }
 
     #footer_link_container a {

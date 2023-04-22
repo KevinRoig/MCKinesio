@@ -1,17 +1,10 @@
-@font-face {
-    font-family: 'Montserrat-Light';
-    src:
-        url('../images/Montserrat-Light.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
 body {
     width: 100vw;
     min-height: 100vh;
     margin: 0;
-    font-family: 'Montserrat-Light', sans-serif;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
     background-color: #fffdfd;
