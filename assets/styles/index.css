@@ -189,8 +189,8 @@ line-height: 1.4;
 }
 
 #customers_opinion {
-    background: linear-gradient(90deg, rgba(244, 198, 180, 1) 0%, rgba(230, 187, 170, 1) 100%);
-    height: 300px;
+    background: linear-gradient(90deg, rgba(248,225,210,1) 0%, rgba(252,245,240,1) 100%);
+            height: 350px;
     width: 80vw;
     margin: 0 auto;
     display: flex;
@@ -198,7 +198,7 @@ line-height: 1.4;
 }
 
 #customers_opinion_title {
-    height: 20%;
+    height: 10%;
 }
 
 #customers_opinion_title p {
@@ -210,14 +210,15 @@ line-height: 1.4;
 }
 
 .customers_opinion_description {
-    color: #ffffff;
+    color: #286f6f;
     width: 90%;
     text-align: center;
     font-size: large;
 }
 
 .customers_opinion_name {
-    color: #ffffff;
+    color: #286f6f;
+    font-weight: bold;
 }
 
 /* --------------------- CAROUSEL ---------------------------- */
@@ -415,10 +416,6 @@ line-height: 1.4;
         height: 2rem;
         top: -125px;
         bottom: 0;
-    }
-
-    .slides-container {
-        height: 84%;
     }
 
     .star {
