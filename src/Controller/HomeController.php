@@ -17,4 +17,10 @@ class HomeController extends AbstractController
 
         ]);
     }
+
+    #[Route('/cgv', name: 'cgv')]
+    public function show(): Response
+    {
+        return $this->render('home/cgv.html.twig');
+    }
 }

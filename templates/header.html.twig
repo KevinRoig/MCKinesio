@@ -11,35 +11,35 @@
     <div id="main_container">
         <div id="link_container">
             <div id="left_link_container">
-                <span id="home_logo_container">
+                <span id="home_logo_container" class="link">
                     <a href="{{path('home') }}">
                         <img id="home_logo" src="{{asset('build/images/logo_website_home.png') }}"
                             alt="un logo home pour revenir à l'accueil du site">
                     </a>
                 </span>
-                <span class="dropdown">
-                    <a href="{{ path('kinesiologie') }}" class="dropdown-menu">La Kinésiologie</a>
+                <span class="link">
+                    <a href="{{ path('kinesiologie') }}">La Kinésiologie</a>
                 </span>
-                <span>
+                <span class="link">
                     <a href="{{path('practical_informations') }}">Infos pratiques</a>
                 </span>
             </div>
             <div id="center_link_container">
-                <span>
+                <span class="link">
                     <a href="{{ path('home') }}">
                         <div id="logo">
-                            <img src="{{asset('build/images/logo_MCK_transparent.png') }}" alt="Le logo du cabinet de Kinésiologie"
-                                width="450px">
+                            <img src="{{asset('build/images/logo_MCK_transparent.png') }}"
+                                alt="Le logo du cabinet de Kinésiologie" width="450px" title="Retour à l'accueil">
                         </div>
                     </a>
                 </span>
 
             </div>
             <div id="right_link_container">
-                <span>
+                <span class="link">
                     <a href="{{ path('contact') }}">Contact & réservation</a>
                 </span>
-                <span>
+                <span class="link">
                     <a href="{{ path('about_me') }}">À propos</a>
                 </span>
             </div>
@@ -51,22 +51,30 @@
                     <span></span>
                 </div>
                 <ul id="menu">
-                    <a href="{{path('home') }}">
-                        <li><img id="home_logo" src="{{asset('build/images/logo_website_home.png') }}"
-                                alt="un logo home pour revenir à l'accueil du site"></li>
-                    </a>
-                    <li class="dropdown-mobile" id="dropdown-mobile">
-                        <a href="{{ path('kinesiologie') }}" class="dropdown-menu-mobile" id="dropdown-menu-mobile">La Kinésiologie</a>
+                    <li class="link">
+                        <a href="{{path('home') }}">
+                            <img id="home_logo" src="{{asset('build/images/logo_website_home.png') }}"
+                                alt="un logo home pour revenir à l'accueil du site">
+                        </a>
                     </li>
-                    <a href="{{path('practical_informations') }}">
-                        <li>Infos pratiques</li>
-                    </a>
-                    <a href="{{ path('contact') }}">
-                        <li>Contact & réservation</li>
-                    </a>
-                    <a href="{{ path('about_me') }}">
-                        <li>À propos</li>
-                    </a>
+                    <li class="link">
+                        <a href="{{ path('kinesiologie') }}">La Kinésiologie</a>
+                    </li>
+                    <li class="link">
+                        <a href="{{path('practical_informations') }}">
+                            Infos pratiques
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="{{ path('contact') }}">
+                            Contact & réservation
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="{{ path('about_me') }}">
+                            À propos
+                        </a>
+                    </li>
                 </ul>
             </div>
 

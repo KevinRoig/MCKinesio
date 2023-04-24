@@ -23,6 +23,7 @@ Encore
     .addEntry('header', './assets/header.js')
     .addEntry('footer', './assets/footer.js')
     .addEntry('index', './assets/index.js')
+    .addEntry('cgv', './assets/cgv.js')
     .addEntry('kinesiologie', './assets/kinesiologie.js')
     .addEntry('practical_informations', './assets/practical_informations.js')
     .addEntry('contact', './assets/contact.js')
