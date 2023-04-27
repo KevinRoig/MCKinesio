@@ -1,5 +1,5 @@
 .first_section {
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding: 2rem 0;
     color: #286f6f;
@@ -19,16 +19,6 @@
     margin: 0 auto;
 }
 
-.infos_image {
-    width: 50%;
-    text-align: center;
-}
-
-.infos_image img {
-    max-width: 90%;
-    max-height: 400px;
-}
-
 .infos_details {
     width: 50%;
     display: flex;
@@ -36,11 +26,99 @@
     justify-content: center;
 }
 
-.first_section .infos_container p {
-    padding: 1rem 1rem 0 1rem;
+.first_section_infos_container {
+    width: 80%;
+    padding: 40px;
     text-align: justify;
+    margin: auto;
     line-height: 1.5rem;
+}
+
+.image_and_text {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.image {
+    width: 40%;
+}
+
+.right_text {
+    width: 60%;
+    padding: 0 0 0 1rem;
+}
+
+.image img {
+    max-height: 321px;
+    max-width: 100%;
+    border-radius: 2%;
+}
+
+.right_text h3 {
+    margin-top: 0;
+}
+
+.first_section_infos_container p {
     margin-bottom: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1040px;
+    margin: auto;
+    padding: 0;
+    gap: 1rem 2rem;
+    color: white;
+    font-weight: 500;
+}
+
+.grid {
+    list-style: none;
+    counter-reset: doc;
+}
+
+.grid>li {
+    counter-increment: doc;
+}
+
+.grid>li:before {
+    content: counter(doc) ". ";
+}
+
+.grid>li {
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto 1fr;
+    gap: 0.5rem;
+    background: linear-gradient(90deg, rgba(234, 155, 106, 1) 0%, rgba(244, 177, 136, 1) 100%);
+}
+
+.grid p {
+    margin-top: 0;
+}
+
+#last_line {
+    grid-column: span 2;
+    text-align: center;
+}
+
+#last_line:before {
+    content: none;
+}
+
+.text li::before {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    padding-left: 1rem;
+}
+
+.first_section_infos_container li {
+    margin: 0.5rem 0;
 }
 
 .infos_details p a {
@@ -49,32 +127,37 @@
 }
 
 .second_section {
+    background: linear-gradient(90deg, rgba(234, 155, 106, 1) 0%, rgba(244, 177, 136, 1) 100%);
     width: 80%;
     margin: auto;
+
+}
+
+.second_section_container {
     display: flex;
-    justify-content: space-around;
-    padding: 1rem 0;
-    background: rgb(234, 155, 106);
-    background: linear-gradient(90deg, rgba(234, 155, 106, 1) 0%, rgba(244, 177, 136, 1) 100%);
+    padding: 1rem;
     color: #ffffff;
 }
 
 .second_section_left {
-    width: 50%;
     display: flex;
-    justify-content: end;
-    margin-right: 5rem;
-    align-items: center;
     font-size: x-large;
+    min-width: 30%;
+}
+
+.second_section_left h3 {
+    margin-top: 0;
+    padding: 0 1rem;
+}
+
+.second_section_right :first-child {
+    margin-top: 0.4rem;
 }
 
 .second_section_right {
-    width: 50%;
-}
-
-.second_section_right p {
     font-size: large;
     font-weight: bold;
+    text-align: justify;
 }
 
 .third_section {
@@ -129,7 +212,9 @@
 }
 
 .third_section_infos_container .infos_details {
-    align-items: baseline;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 2rem;
 }
 
 .fourth_section {
@@ -156,6 +241,7 @@
     text-align: center;
     margin-bottom: 1rem;
     padding: 1rem 0;
+    font-weight: 500;
 }
 
 .fourth_section h2 {
@@ -193,6 +279,14 @@
         padding: 1rem 0;
     }
 
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #last_line {
+        grid-column: span 1;
+    }
+
     .infos_container,
     .infos_container_2 {
         flex-direction: column;
@@ -208,10 +302,6 @@
 
     .infos_details {
         width: 100%;
-    }
-
-    .first_section .infos_details p {
-        padding: 1rem 0;
     }
 
     .third_section .infos_details p {
@@ -241,6 +331,15 @@
     .second_section h2,
     .third_section h2 {
         padding: 0 1rem;
+    }
+
+    .second_section_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second_section_left {
+        text-align: center;
     }
 
     .map-responsive {

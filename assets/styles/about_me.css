@@ -1,20 +1,16 @@
-.main_container {
-    background: linear-gradient(to left, #e6bbaa, #ffffff);
-}
 .first_section {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
     color: #286F6F;
     line-height: 1.4;
-font-weight: 500;
+    font-weight: 500;
 }
 
 .left_container {
     width: 80%;
-    padding: 40px;
+    padding: 2rem 0;
     text-align: justify;
-    margin: auto;
 }
 
 .left_container img {
@@ -42,6 +38,10 @@ font-weight: 500;
 /* --------------------- MEDIA QUERIES ---------------------------- */
 
 @media only screen and (max-width: 800px) {
+    .left_container {
+        width: 90%;
+    }
+    
     .image_and_text {
         display: flex;
         flex-direction: column;
@@ -50,7 +50,7 @@ font-weight: 500;
 
     .image_and_text img {
         max-width: 100%;
-max-height: 250px;
-margin: auto;
+        max-height: 250px;
+        margin: auto;
     }
 }

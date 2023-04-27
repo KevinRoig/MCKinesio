@@ -8,23 +8,27 @@
 
 {% block footer %}
 <footer id="footer">
-        <div id="footer_link_container">
+    <div id="footer_link_container">
 
-            <div id="footer_left_link_container">
-                <a href="{{ path('kinesiologie') }}" >La Kinésiologie</a>
-                <a href="{{path('practical_informations') }}">Infos pratiques</a>
-            </div>
-            <div id="footer_center_link_container">
-                <a href="{{ path('home') }}">
-                    <img id="footer_logo" src="{{asset('build/images/logo_MCK_transparent_green.png') }}"
-                        alt="Le logo du cabinet de Kinésiologie">
-                </a>
-            </div>
-            <div id="footer_right_link_container">
-                <a href="{{ path('contact') }}">Contact & réservation</a>
-                <a href="{{ path('about_me') }}">À propos</a>
-                <a href="{{path('cgv') }}">CGV</a>
-            </div>
+        <div id="footer_left_link_container">
+            <a href="{{ path('kinesiologie') }}">La Kinésiologie</a>
+            <a href="{{path('practical_informations') }}">Infos pratiques</a>
         </div>
+        <div id="footer_center_link_container">
+            <a href="{{ path('home') }}">
+                <img id="footer_logo" src="{{asset('build/images/logo_MCK_transparent_green.png') }}"
+                    alt="Le logo du cabinet de Kinésiologie">
+            </a>
+        </div>
+        <div id="footer_right_link_container">
+            <a href="{{ path('contact') }}">Contact & réservation</a>
+            <a href="{{ path('about_me') }}">À propos</a>
+            <a href="{{path('cgv') }}">CGV</a>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Site créé par <a href="https://www.kevinroig.myknives.net" target="_blank">Kevin Roig</a></p>
+    </div>
 </footer>
 {% endblock footer %}

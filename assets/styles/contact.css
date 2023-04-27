@@ -63,6 +63,7 @@ label {
     padding: 2rem 0;
     background: linear-gradient(90deg, rgba(234, 155, 106, 1) 0%, rgba(244, 177, 136, 1) 100%);
     color: #ffffff;
+    font-weight: 500;
 }
 
 .first_section h2 {

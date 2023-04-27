@@ -10,6 +10,7 @@
 .second_section {
     background: linear-gradient(90deg, rgba(234, 155, 106, 1) 0%, rgba(244, 177, 136, 1) 100%);
     color: white;
+    font-weight: 500;
 }
 
 .fourth_section {
