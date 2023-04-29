@@ -22,6 +22,9 @@
      display: none;
  }
 
+ img {
+     border-radius: 6px;
+ }
 
  #nav_bar {
      display: flex;
@@ -75,6 +78,7 @@
  #home_logo {
      width: 26px;
      height: 26px;
+     border-radius: 0;
  }
 
  #home_logo:hover {

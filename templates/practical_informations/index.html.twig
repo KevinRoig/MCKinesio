@@ -13,7 +13,6 @@
 
 {% block body %}
 <section class="first_section">
-    <h2>Déroulement d'une séance</h2>
     <div class="first_section_infos_container">
         <div class="image_and_text">
             <div class="image">
@@ -39,52 +38,86 @@
         </div>
         <div class="text">
             <div>
-                <p>
-                    <i>Exemple de séance type :</i>
-                </p>
+                <h2>Déroulement d'une séance</h2>
                 <ol class="grid">
                     <li>
-                        <p>
-                              Nous débutons par un temps de discussion qui vous permet d’exposer votre problématique et
-                        d’établir
-                        votre objectif de séance.
-                        </p>                      
+                        <div>
+                            <div class="grid_icon">
+                                <img src="{{asset('build/images/discuter.png') }}"
+                                    alt="Une icone de bulles de discussion">
+                            </div>
+                            <p>
+                                Nous débutons par un temps de discussion qui vous permet d’exposer votre problématique
+                                et
+                                d’établir
+                                votre objectif de séance.
+                            </p>
+
+                        </div>
                     </li>
                     <li>
-                        <p>
-                            L’objectif prioritaire qui est déterminé pour la séance, sera précis, positif, et motivant. Il
-                        sera
-                        le fil conducteur, permettant
-                        de trouver par le biais du test musculaire les déséquilibres en jeu, et les équilibrages à
-                        apporter,
-                        tout en explorant les
-                        liens et prises de conscience éventuels.
-                        </p>
+                        <div>
+                            <div class="grid_icon">
+                                <img src="{{asset('build/images/chercher.png')}}" alt="Une icone de loupe">
+                            </div>
+                            <p>
+                                L’objectif prioritaire qui est déterminé pour la séance, sera précis, positif, et
+                                motivant.
+                                Il
+                                sera
+                                le fil conducteur, permettant
+                                de trouver par le biais du test musculaire les déséquilibres en jeu, et les équilibrages
+                                à
+                                apporter,
+                                tout en explorant les
+                                liens et prises de conscience éventuels.
+                            </p>
+
+                        </div>
                     </li>
                     <li>
-                      <p>
-                         Les équilibrages peuvent être le contact de points d’acupression, des mouvements du corps ou
-                        oculaires, des sons, des visualisations,
-                        des prises de conscience autour d’un mot, d’une phrase... La personne est donc invitée à lâcher
-                        le
-                        mental et à entrer dans le
-                        monde des ressentis.
-                      </p>
+                        <div>
+                            <div class="grid_icon">
+                                <img src="{{asset('build/images/massage.png')}}" alt="Une icone de loupe">
+                            </div>
+                            <p>
+                                Les équilibrages peuvent être le contact de points d’acupression, des mouvements du
+                                corps ou
+                                oculaires, des sons, des visualisations,
+                                des prises de conscience autour d’un mot, d’une phrase... La personne est donc invitée à
+                                lâcher
+                                le
+                                mental et à entrer dans le
+                                monde des ressentis.
+                            </p>
+                        </div>
                     </li>
                     <li>
-                        <p>
-                             Enfin, des exercices simples à faire à la maison (mouvements, phrases à répéter, actes
-                        symboliques à
-                        effectuer…)
-                        visant à prolonger le travail entrepris en séance peuvent être proposés.
-                        </p>      
+                        <div>
+                            <div class="grid_icon"><img src="{{asset('build/images/arrows.png') }}" alt="">
+                                <img src="{{asset('build/images/eye.png')}}" alt="Une icone de loupe">
+                                <img src="{{asset('build/images/infinite_arrow.png')}}" alt="">
+                                
+                            </div>
+                            <p>
+                                Enfin, des exercices simples à faire à la maison (mouvements, phrases à répéter, actes
+                                symboliques à
+                                effectuer…)
+                                visant à prolonger le travail entrepris en séance peuvent être proposés.
+                            </p>
+                        </div>
                     </li>
                     <li id="last_line">
+                        <div>
+                            <div class="grid_icon"><img src="{{asset('build/images/icon_lotus.png') }}" alt="">                                
+                            </div>
                         <p>
-                             A l’issue de la séance, la personne peut déjà ressentir un apaisement, une détente intérieure et
-                        corporelle.
-                        L’objectif défini en début de séance ne doit plus mettre la personne en stress.
+                            A l’issue de la séance, la personne peut déjà ressentir un apaisement, une détente
+                            intérieure et
+                            corporelle.
+                            L’objectif défini en début de séance ne doit plus mettre la personne en stress.
                         </p>
+                        </div>
                     </li>
                 </ol>
                 <p>
@@ -98,11 +131,10 @@
                 <p>
                     Pour un même objectif, il peut être nécessaire de faire plusieurs séances, mais chaque cas est
                     particulier :
-                    de 1 à 3 séances pour un objectif « ponctuel », 5 ou 6 séances pour un travail « plus approfondi »,
+                    de 1 à 3 séances pour un objectif « ponctuel », 5 ou 6 séances pour un travail plus « approfondi »,
                     et
                     davantage pour un « travail de fond », chacune espacée de 3 à 4 semaines, ou au rythme de la
-                    personne
-                    (plus rapprochée ou plus espacées).
+                    personne.
                 </p>
                 <p>
                     Il est à préciser que lors de la séance, il n’y a aucun diagnostic, aucune interprétation, ni
@@ -122,7 +154,7 @@
                     La présence de la maman est obligatoire lors d'une séance pour les enfants de moins de 7 ans.
                 </p>
                 <p>
-                    Pour le bon déroulement des soins, 1 seul enfant est autorisé au sein de mon cabinet (celui qui a
+                    Pour le bon déroulement des soins, un seul enfant est autorisé au sein de mon cabinet (celui qui a
                     rendez-vous).
                 </p>
                 <p>
@@ -135,12 +167,6 @@
                     pas motivé), celle-ci se fera en transfert sur le parent (en ayant au préalable son autorisation
                     d’effectuer la séance).
                 </p>
-                <p>
-                    Le cabinet n'ayant pas d'accès PMR, je peux exceptionnellement me déplacer, dans une zone proche de
-                    Tours.
-                    Je vous invite à me contacter directement pour connaître les modalités et tarifs spécifiques.
-                </p>
-
             </div>
         </div>
     </div>
@@ -151,9 +177,10 @@
             <h3>Tarifs</h3>
         </div>
         <div class="second_section_right">
-            <p>Séance Kinésiologie (durée environ 1h30) : 60€</p>
-            <p>Séance Kinésiologie Enfant, moins de 12 ans (durée 45 min-1h) : 50€</p>
+            <p>Séance Kinésiologie (durée environ 1h30) : <strong>60€</strong></p>
+            <p>Séance Kinésiologie Enfant, moins de 12 ans (durée 45 min-1h) : <strong>50€</strong></p>
         </div>
+        <div id="border_bottom"></div>
     </div>
     <div class="second_section_container">
         <div class="second_section_left">
