@@ -110,6 +110,16 @@
      color: #F1F3EA;
  }
 
+ .social_logos {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .social_logos img {
+    width: 30px;
+    padding: 0.5rem 0;
+ }
+
  #menuToggle {
      display: none;
  }
@@ -171,6 +181,10 @@
          transform: none;
      }
 
+     .social_logos img {
+        padding: 0 0 2rem 0;
+     }
+
      #burger_menu {
          display: block;
          height: 0;
@@ -229,7 +243,6 @@
          color: #ffffff;
          font-size: larger;
          transition: color 0.3s ease;
-         margin-top: 5%;
      }
 
      #menuToggle a:hover {

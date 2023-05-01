@@ -233,8 +233,20 @@
 
 .third_section_infos_container .infos_details {
     margin-bottom: 0;
-    text-align: center;
+    text-align: justify;
     line-height: 2rem;
+    padding-right: 1rem;
+}
+
+.third_section_infos_container .infos_details ul {
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.third_section_infos_container .infos_details li {
+    list-style-type: '📍';
+    padding: 0 0 0 1rem;
+    margin-left: 1rem
 }
 
 .fourth_section {
@@ -340,6 +352,10 @@
 
     .infos_details {
         width: 100%;
+    }
+
+    .third_section_infos_container .infos_details {
+        padding-right: 0;
     }
 
     .third_section .infos_details p {

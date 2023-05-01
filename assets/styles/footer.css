@@ -55,7 +55,8 @@
 }
 
 .copyright {
-    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: right;
 }
 
 .copyright p {
@@ -73,6 +74,15 @@
 @media only screen and (max-width: 1200px) {
     #footer_link_container a {
         font-size: 16px;
+    }
+
+    #footer .social_logos {
+        flex-direction: row;
+        order:3;
+    }
+
+    #footer .social_logos img {
+        padding: 0 1rem;
     }
 
     #footer_left_link_container,
