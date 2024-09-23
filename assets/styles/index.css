@@ -139,7 +139,9 @@
 }
 
 .infos_container img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 333px;
+    margin: auto;
 }
 
 .infos_details {
@@ -381,7 +383,7 @@ line-height: 1.4;
     }
 
     .fourth_section img {
-        width: 100%;
+        max-height: 270px;
     }
 
     .fifth_section img {
