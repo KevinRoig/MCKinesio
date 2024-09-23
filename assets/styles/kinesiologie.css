@@ -51,6 +51,7 @@
 
 .first_section .infos_image {
     margin: 1rem auto;
+    text-align: center;
 }
 
 .infos_image img {
@@ -63,7 +64,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 1rem;
 }
 
 .infos_details ul {
