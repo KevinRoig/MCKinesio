@@ -1,0 +1,15 @@
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    p {
+        font-size: 25px;
+        margin: 0;
+    }
+    h1 {
+        font-size: 70px;
+        margin: 0;
+        align-self: self-end;
+    }
+}
