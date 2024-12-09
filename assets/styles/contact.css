@@ -59,7 +59,7 @@ label {
 .second_section {
     width: 80%;
     text-align: center;
-    margin: auto;
+    margin: 0 auto 2rem;
     padding: 2rem 0;
     background: linear-gradient(90deg, rgba(234, 155, 106, 1) 0%, rgba(244, 177, 136, 1) 100%);
     color: #ffffff;
@@ -124,6 +124,12 @@ label {
     text-decoration: underline;
 }
 
+.svg {
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+}
+
 .button_container {
     width: 100%;
     display: flex;
@@ -144,6 +150,11 @@ label {
     text-align: center;
     line-height: 40px;
     padding: 5px 20px;
+}
+
+#rdv {display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact_nom,
@@ -184,7 +195,7 @@ label {
 
 .third_section {
     width: 80%;
-    padding: 1rem 0 3rem 0;
+    padding: 0 0 2rem 0;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -249,6 +260,7 @@ label {
     height: 100%;
     width: 100%;
     position: absolute;
+    z-index: -1;
 }
 
 /* --------------------- MEDIA QUERIES ---------------------------- */

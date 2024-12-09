@@ -65,6 +65,7 @@
     text-align: center;
     line-height: 40px;
     padding: 5px 20px;
+    margin: auto;
 }
 
 .right_container img {
@@ -109,9 +110,21 @@
     top: -50px;
 }
 
+
+.svg {
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+}
+
+#rdv {
+    display: flex;
+    margin: 1rem auto;
+}
+
 .contact {
     position: relative;
-    top: -40px;
+    bottom: 60px;
 }
 
 .fourth_section {
@@ -345,10 +358,12 @@ line-height: 1.4;
 
     .calendly_container {
         display: block;
+        width: max-content;
+        margin: auto;
     }
 
     .contact {
-        top: unset;
+        bottom: unset;
     }
 
     .third_section .button_container {
