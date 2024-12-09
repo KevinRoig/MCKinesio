@@ -1,6 +1,9 @@
 p{
     margin: 0;
 }
+h3 {
+    margin: 0;
+}
 
 .title_and_reservation_container {
     width: 100%;
@@ -39,7 +42,7 @@ p{
 .reservation {
     width: 100%;
     text-align: center;
-    margin: 3rem auto;
+    margin: 5rem auto 2rem auto;
 }
 .button_container {
     width: 100%;
@@ -87,12 +90,15 @@ h2, .third_band h3 {
     margin: 0 auto;
 }
 
+.third_band h2 {
+    padding-bottom: 0;
+}
+
 .first_section, .second_section{
     width: 80%;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 3rem 0 2rem 0;
     color: #286F6F;
-    padding: 2rem 0 ;
     h3 {
         margin-top:0;
         text-align: center;
@@ -186,6 +192,10 @@ iframe {
     max-width: 50px;
 }
 
+.downpage {
+    margin: 2rem auto;
+}
+
 /* --------------------- MEDIA QUERIES ---------------------------- */
 @media only screen and (max-width: 1200px) {
     .infos_container {
@@ -249,5 +259,10 @@ iframe {
         grid-column: span 1;
     }
     li {margin: .5rem 0;}
-    
+}
+@media only screen and (max-width: 400px) {
+    .button_container a {
+        height: auto;
+        align-items: center;
+    }
 }

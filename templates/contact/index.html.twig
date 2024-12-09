@@ -23,39 +23,53 @@
 {% endfor %}
 <section class="first_section">
     <h2>Réservation Kinésiologie</h2>
-    <div class="infos_container">
-
-        <!-- Début de widget en ligne Calendly -->
-        <div class="calendly-inline-widget"
-            data-url="https://calendly.com/courgeon-mathilde-kinesiologie/rdv-kinesiologie?hide_gdpr_banner=1&primary_color=286f6f&background_color=F9F9F9&text_color=0d4442"
-            style="min-width:320px;height:700px;">
-            <div class="infos_details">
-                <p>Vous pouvez réserver directement un créneau en utilisant le calendrier.
-                </p>
-            </div>
-        </div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-        <!-- Fin de widget en ligne Calendly -->
+    <div class="reservation_title">
+        <p>
+            Vous pouvez réserver directement un créneau en utilisant le calendrier.
+        </p>
     </div>
-    <span id="before_contact" class="button_container">
-        <!-- Début de widget de lien Calendly -->
+    <div class="calendly-inline-widget">
+            <!-- Cal inline embed code begins -->
+        <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
+        <script type="text/javascript">
+        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+        Cal("init", "kinesiologie", {origin:"https://cal.com"});
+        
+        Cal.ns.kinesiologie("inline", {
+            elementOrSelector:"#my-cal-inline",
+            config: {"layout":"month_view"},
+            calLink: "mc-kinesiologie/kinesiologie?phonenumber=%2B33",
+        });
+    
+        Cal.ns.kinesiologie("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#286F6F"},"dark":{"cal-brand":"#286F6F"}},"hideEventTypeDetails":false,"layout":"month_view"});
+        </script>
+    </div>
+    <!-- Cal inline embed code ends -->
+    <div class="button_container">
         <div class="calendly_container">
-            <div class="infos_details">
-                <p>Vous pouvez réserver directement un créneau en cliquant sur le bouton ci-dessous.
-                </p>
-            </div>
-            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-            <div class="button_container">
-                <a id="rdv" href=""
-                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/courgeon-mathilde-kinesiologie/rdv-kinesiologie?primary_color=286f6f&background_color=F9F9F9&text_color=0d4442'});return false;">  <svg class="svg h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokelinecap="round" strokelinejoin="round" strokewidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg> Prendre rendez-vous</a>   
-            </div>
-                      
+           <!-- Cal element-click embed code begins -->
+            <script type="text/javascript">
+                (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+            Cal("init", "kinesiologie", {origin:"https://cal.com"});
+            
+                
+                // Important: Please add the following attributes to the element that should trigger the calendar to open upon clicking.
+                // `data-cal-link="mc-kinesiologie/kinesiologie"`
+                // data-cal-namespace="kinesiologie"
+                // `data-cal-config='{"layout":"month_view"}'`
+            
+                Cal.ns.kinesiologie("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#286F6F"},"dark":{"cal-brand":"#286F6F"}},"hideEventTypeDetails":false,"layout":"month_view"});
+                </script>
+    <!-- Cal element-click embed code ends -->
+            <a id="rdv" data-cal-link="mc-kinesiologie/kinesiologie?phonenumber=%2B33" data-cal-namespace="kinesiologie" data-cal-config='{"layout":"month_view", location={"value":"phone","optionValue":"%2B919999999999"}}'>
+                <svg class="svg h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokelinecap="round" strokelinejoin="round" strokewidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg> Prendre rendez-vous</a>
+
         </div>
-        <!-- Fin de widget de lien Calendly -->
-    </span>
+    </div>
+    <div class="button_container contact"></div>
+    </div>
 </section>
 <section class="third_section">
     <h2>Informations pratiques</h2>
