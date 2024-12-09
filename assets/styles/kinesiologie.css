@@ -52,6 +52,7 @@
 .first_section .infos_image {
     margin: 1rem auto;
     text-align: center;
+    z-index: -1;
 }
 
 .infos_image {

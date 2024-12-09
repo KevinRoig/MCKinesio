@@ -41,6 +41,13 @@
     font-size: 18px;
     color: #286f6f;
 }
+#footer_left_link_container {
+    width: 50%;
+}
+#footer_right_link_container{
+    justify-content: space-between;
+    width: 50%;
+}
 
 #footer_logo {
     max-width: 100%;

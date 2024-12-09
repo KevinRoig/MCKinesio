@@ -1,0 +1,204 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+{{ encore_entry_link_tags('dream_machine') }}
+{% endblock %}
+
+{% block title %}Dream Machine{% endblock %}
+
+{% block body %}
+<div class="title_and_reservation_container">
+    <img src="{{asset('build/images/dm_small.png') }}" alt="">
+    <div class="title">
+        <h1>DREAM MACHINE</h1>
+    </div>
+    <div class="reservation">
+    <!-- Cal element-click embed code begins -->
+    <script type="text/javascript">
+        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", "dreammachine", {origin:"https://cal.com"});
+    
+        
+        // Important: Please add the following attributes to the element that should trigger the calendar to open upon clicking.
+        // `data-cal-link="mc-kinesiologie/dreammachine"`
+        // data-cal-namespace="dreammachine"
+        // `data-cal-config='{"layout":"month_view"}'`
+    
+        Cal.ns.dreammachine("ui", {"styles":{"branding":{"brandColor":"#286F6F"}},"hideEventTypeDetails":false,"layout":"month_view"});
+        </script>
+        <!-- Cal element-click embed code ends -->
+        <div class="button_container">
+            <a id="rdv" data-cal-link="mc-kinesiologie/dreammachine?phonenumber=%2B33" data-cal-namespace="dreammachine" data-cal-config='{"layout":"month_view"}'>  <svg class="svg h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokelinecap="round" strokelinejoin="round" strokewidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg> Réserver votre séance </a>
+        </div>
+    </div>
+</div>
+<div class="first_band">
+<h2>
+    Que vous ayez besoin de réduire votre stress, améliorer votre sommeil,<br> ou favoriser un flow de créativité, <br> la Dream Machine vous plongera dans une expérience unique. 
+</h2>
+</div>
+<div class="first_section">
+    <h3>La photostimulation, comment ça fonctionne ?</h3>
+    <div class="infos_container">
+        <div class="infos_details">
+            <p>
+            La technologie brevetée de la Dream Machine est basée sur la photostimulation, un phénomène longtemps confiné aux laboratoires de neurosciences. La Dream Machine, ressemble à une lampe, et émet des fréquences lumineuses qui stimulent le nerf optique, puis le cerveau. 
+            </p>
+            <br>
+            <p>
+                La lampe est constituée de 21 LED qui créent un scintillement selon des programmes conçus dans des buts précis. Ces programmes sont codés pour combiner des fréquences lumineuses dont l’intensité et les rythmes varient à mesure de l’évolution de la séance, modifiant l’activité électrique cérébrale vers un état désiré. 
+            </p>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wND4XuwOH_I?si=mV53Z3mWHH49XGgG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="second_band">
+<h2>
+    IMPORTANT 
+</h2>
+<p class="second_text_1">
+    Déconseillé aux personnes épileptiques, photosensibles, enfants, femmes enceintes. 
+</p>
+<p class="second_text">
+    Pour ces raisons je ne pratique les séances Dream Machine qu’avec les personnes de plus de 18 ans sans contre-indications. 
+</p>
+<p  class="second_text">
+    Un doute ? Je vous invite à vous renseigner au préalable auprès du spécialiste médical qui vous suit habituellement.
+</p>
+</div>
+<div class="second_section">
+    <h3>Comment se déroule la séance ?</h3>
+    <div class="infos_container">
+        <div class="infos_details">
+            <p>
+                La séance a lieu assis confortablement, les yeux fermés. Vous êtes équipé d’un casque audio qui vous guide dans l’expérience. La session peut être accompagnée de musique selon les besoins.
+            </p>
+            <br>
+            <p class="time">
+                1er temps
+            </p>
+            <p>
+                Nous commencerons par échange pour définir ensemble votre objectif. Vous aurez également l'opportunité de poser toutes vos questions concernant la Dream Machine et l'expérience à venir.
+            </p>
+            <br>
+            <p class="time">
+                2ème temps
+            </p>
+            <p>
+                La session commence. Je serai à vos côtés tout au long de la séance pour vous accompagner aussi pendant le programme lumineux. Une fois confortablement installé, il vous suffira de fermer les yeux et de profiter pleinement de ce moment que vous vous offrez.
+            </p>
+            <br>
+            <p class="time">
+                3ème temps
+            </p>
+            <p>
+                A la fin de la session, nous reprenons un temps d'échange pour conclure cette séance et faire un débriefing de l'expérience vécue.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="third_band">
+    <h2>
+        Quels sont les bénéfices d’une séance ?
+    </h2>
+    <div class="infos_container">
+       
+        <ol class="grid">
+            <li id="first_line">
+                <div> 
+                        <h3>
+                            Relaxation – Stimulation - Exploration
+                        </h3>  
+                        <p>
+                            Dans le cadre d’un accompagnement, la Dream Machine est bien plus qu’un gadget récréatif. 
+                            <br> <br>
+                            Grâce à mon écoute et mon expérience, 
+                            je vous aide à bien clarifier votre intention pour donner la bonne direction à l’exploration qui va suivre. 
+                            Je me suis formée afin de comprendre, et d’accompagner des personnes qui s’interrogent sur leur rapport aux émotions et qui 
+                            souhaitent amorcer un changement. 
+                            <br> <br>
+                            Vous allez pouvoir explorer en toute sécurité vos sensations, vos émotions, vos perceptions, permettant de contacter une introspection plus profonde.
+                        </p>
+                    </div>
+                </li>     
+            <li>
+                <div>
+                    <div class="grid_icon">
+                        <img src="{{asset('build/images/tornado.png') }}"
+                        alt="Une icone de tornade">
+                    </div>
+                    <p>
+                        Réduire le stress et favoriser la relaxation, capacité à couper instantanément les pensées, induire un état de relaxation profonde, contribuant à la diminution du stress et à une meilleure gestion des émotions.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="grid_icon">
+                        <img src="{{asset('build/images/happy.png') }}"
+                        alt="Une icone d'un smiley heureux">
+                    </div>
+                    <p>
+                        Optimiser le sommeil et le repos  améliorez la qualité de sommeil.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="grid_icon">
+                        <img src="{{asset('build/images/moon.png') }}"
+                        alt="Une icone de la lune">
+                    </div>
+                    <p>
+                        Élever l'humeur et l'état d'esprit améliorer l'humeur générale et d'induire un sentiment de bien-être. 
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="grid_icon">
+                        <img src="{{asset('build/images/seed-of-life.png') }}"
+                        alt="Une icone d'une graine de vie">
+                    </div>
+                    <p>
+                        Stimuler des états de conscience modifiés, la méditation avancée, l'introspection profonde ou les expériences similaires aux voyages psychédéliques. On qualifie la Dream Machine de "semi-psychédélique".
+                    </p>
+                </div>
+            </li>
+            <li id="last_line">
+                    <p id="last_line_text">
+                        Il est important de souligner que chaque expérience est unique et profondément personnelle.
+                    </p>
+           </li>
+
+        </div>
+    </div>
+</div>
+
+<div class="reservation downpage">
+    <!-- Cal element-click embed code begins -->
+  <script type="text/javascript">
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", "dreammachine", {origin:"https://cal.com"});
+    
+      
+      // Important: Please add the following attributes to the element that should trigger the calendar to open upon clicking.
+      // `data-cal-link="mc-kinesiologie/dreammachine"`
+      // data-cal-namespace="dreammachine"
+      // `data-cal-config='{"layout":"month_view"}'`
+    
+      Cal.ns.dreammachine("ui", {"styles":{"branding":{"brandColor":"#286F6F"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+      <!-- Cal element-click embed code ends -->
+      <div class="button_container">
+          <a id="rdv" data-cal-link="mc-kinesiologie/dreammachine?phonenumber=%2B33" data-cal-namespace="dreammachine" data-cal-config='{"layout":"month_view"}'>  <svg class="svg h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokelinecap="round" strokelinejoin="round" strokewidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg> Réserver votre séance </a>
+      </div>
+  </div>
+
+{% endblock %}

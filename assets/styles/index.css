@@ -65,6 +65,7 @@
     text-align: center;
     line-height: 40px;
     padding: 5px 20px;
+    margin: auto;
 }
 
 .right_container img {
@@ -105,13 +106,20 @@
     display: none;
 }
 
-.calendly-inline-widget {
-    top: -50px;
+.svg {
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+}
+
+#rdv {
+    display: flex;
+    margin: 1rem auto;
 }
 
 .contact {
     position: relative;
-    top: -40px;
+    bottom: 60px;
 }
 
 .fourth_section {
@@ -318,6 +326,9 @@ line-height: 1.4;
     .left_container {
         width: 100%;
         padding: 0 0 20px 0;
+        .button_container{
+            margin: 2rem auto;
+        }
     }
 
     .right_container {
@@ -345,10 +356,12 @@ line-height: 1.4;
 
     .calendly_container {
         display: block;
+        width: max-content;
+        margin: auto;
     }
 
     .contact {
-        top: unset;
+        bottom: unset;
     }
 
     .third_section .button_container {
@@ -390,6 +403,10 @@ line-height: 1.4;
 
     .fifth_section img {
         max-width: 222px;
+    }
+
+    .sixth_section {
+        padding-top: 0;
     }
 
     #customers_opinion {
