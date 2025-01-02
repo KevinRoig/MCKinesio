@@ -31,6 +31,9 @@
             <a id="rdv" data-cal-link="mc-kinesiologie/dreammachine?phonenumber=%2B33" data-cal-namespace="dreammachine" data-cal-config='{"layout":"month_view"}'>  <svg class="svg h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokelinecap="round" strokelinejoin="round" strokewidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
             </svg> Réserver votre séance </a>
+            <a class="gift_card" href="{{ path('gift_card') }}" id="button"> <img class="svg" id="gift_icon" src="{{asset('build/images/gift_card_icon.png')}}" alt="Une icone de carte cadeau">
+                <p>Offrir une carte cadeau</p>
+            </a>
         </div>
     </div>
 </div>
@@ -195,9 +198,12 @@
       </script>
       <!-- Cal element-click embed code ends -->
       <div class="button_container">
-          <a id="rdv" data-cal-link="mc-kinesiologie/dreammachine?phonenumber=%2B33" data-cal-namespace="dreammachine" data-cal-config='{"layout":"month_view"}'>  <svg class="svg h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokelinecap="round" strokelinejoin="round" strokewidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg> Réserver votre séance </a>
+        <a id="rdv" data-cal-link="mc-kinesiologie/dreammachine?phonenumber=%2B33" data-cal-namespace="dreammachine" data-cal-config='{"layout":"month_view"}'>  <svg class="svg h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokelinecap="round" strokelinejoin="round" strokewidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+        </svg> Réserver votre séance </a>
+        <a class="gift_card" href="{{ path('gift_card') }}" id="button"> <img id="gift_icon" class="svg" src="{{asset('build/images/gift_card_icon.png')}}" alt="Une icone de carte cadeau">
+            <p>Offrir une carte cadeau</p>
+        </a>
       </div>
   </div>
 

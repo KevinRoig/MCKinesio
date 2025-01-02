@@ -17,12 +17,10 @@
                             alt="un logo home pour revenir à l'accueil du site">
                     </a>
                 </span>
-                <span class="link">
-                    <a href="{{ path('kinesiologie') }}">La Kinésiologie</a>
-                </span>
-                <span class="link">
-                    <a href="{{path('practical_informations') }}">Infos pratiques</a>
-                </span>
+                <a class="link" href="{{ path('kinesiologie') }}">La Kinésiologie</a>
+                <a class="link" href="{{path('practical_informations') }}">Infos pratiques</a>
+                <a class="link" href="{{ path('contact') }}">Contact<br> & <br>réservation</a>
+             
             </div>
             <div id="center_link_container">
                 <span class="link">
@@ -36,15 +34,9 @@
 
             </div>
             <div id="right_link_container">
-                <span class="link">
-                    <a href="{{ path('dream-machine') }}">Dream Machine</a>
-                </span>
-                <span class="link">
-                    <a href="{{ path('contact') }}">Contact & réservation</a>
-                </span>
-                <span class="link">
-                    <a href="{{ path('about_me') }}">À propos</a>
-                </span>
+                    <a class="link" href="{{ path('dream-machine') }}">Dream Machine</a>
+                    <a class="link" href="{{ path('gift_card') }}">Carte cadeau</a>
+                    <a class="link" href="{{ path('about_me') }}">À propos</a>
                 <span class="social_logos">
                     <a class="link" href="https://www.facebook.com/mc.kinesiologie/" target="_blank">
                         <img src="{{ asset('build/images/facebook.png') }}" alt="Le logo de Facebook">
@@ -77,13 +69,18 @@
                         </a>
                     </li>
                     <li class="link">
+                        <a href="{{ path('contact') }}">
+                            Contact & réservation
+                        </a>
+                    </li>
+                    <li class="link">
                         <a href="{{ path('dream-machine') }}">
                             Dream Machine
                         </a>
                     </li>
                     <li class="link">
-                        <a href="{{ path('contact') }}">
-                            Contact & réservation
+                        <a href="{{ path('gift_card') }}">
+                            Carte cadeau
                         </a>
                     </li>
                     <li class="link">
