@@ -1,0 +1,119 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+{{ encore_entry_link_tags('gift_card') }}
+{% endblock %}
+
+{% block title %}Carte cadeau{% endblock %}
+
+{% block body %}
+<div class="main_container">
+    <section class="first_container">
+        <h1>Vous êtes à la recherche d’un cadeau bien-être pour faire plaisir à vos proches ?</h1>
+        <div class="infos_container">
+             <p>
+            En offrant une carte cadeau session Dream Machine vous leur offrez un moment de détente inédit. 
+        </p>
+        <p>
+            Ce type de séance offre pause ressourçante dans un quotidien bien rempli. 
+        </p>
+        <p>
+            Ces sessions sont courtes mais détrompez-vous ! La déconnexion est instantanée, et l’induction d’un état de 
+            relaxation profonde est accessible sans expérience préalable de la méditation. 
+            Cet état contribuera à la diminution des sensations de stress et une meilleure gestion des émotions, selon le besoin du moment. 
+        </p>
+        <p>
+            En début de séance, je prends toujours un moment pour aider la personne à déterminer l'état vers lequel elle souhaite se connecter. 
+            Puis nous faisons un débriefing en fin de séance.
+        </p>
+        <p>
+            Carte cadeau d'une valeur de 30€ à valoir sur une session DREAM MACHINE, valable 6 mois et utilisable en une fois.
+        </p>
+
+        </div>
+        <div class="image">
+            <a href="https://buy.stripe.com/cN28xu4S3fxw6iIbIJ" target="_blank" >
+                <img src="{{asset('build/images/gift_card.png') }}" alt="Une carte cadeau pour une séance de Dream Machine">
+            </a>
+        </div>
+        <span class="button_container">
+            <a href="https://buy.stripe.com/cN28xu4S3fxw6iIbIJ" id="button" target="_blank"> <img id="gift_icon" class="icon" src="{{asset('build/images/gift_card_icon.png')}}" alt="Une icone de carte cadeau">
+                <p>Offrir une carte cadeau</p>
+            </a>
+        </span>
+    </section>
+
+    <section class="second_container">
+        <div class="text">
+            <div>
+                <h2>Informations importantes</h2>
+                <ol class="grid">
+                    <li>
+                        <div>
+                            <div class="grid_icon">
+                                <img src="{{asset('build/images/paper.png') }}"
+                                    alt="Une icone d'un document papier">
+                            </div>
+                            <p>
+                                En achetant un bon cadeau vous attestez avoir lu <b>les contre-indications et accepté les termes d’utilisation : </b>
+                            </p>
+                            <div class="pdf">
+                                <a href="{{asset('build/images/dechargeutilisateur.pdf')}}" target="_blank"><img src="{{asset('build/images/pdf.png')}}" alt="Une icone d'un docmuent type pdf">
+                                <br>
+                                <p> Conditions d'utilisations Dream Machine </p>
+                                </a>
+                            </div>
+                            <p>
+                                Ce document sera signé le jour du rendez-vous par l’utilisateur.
+                            </p>
+                            <span class="disclaimer">
+                                L’expérience Dream Machine n’est pas accessible aux femmes enceintes et aux enfants, 
+                                aux personnes souffrant de troubles psychiatriques, ou de troubles neurologiques (épilepsie).
+                            </span>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="grid_icon">
+                                <img src="{{asset('build/images/gift_card_icon.png')}}" alt="Une icone de carte cadeau">
+                            </div>
+                            <p>
+                                Vous recevrez une version numérique du chèque-cadeau.
+                            </p>
+                            <p>
+                                La carte cadeau est non remboursable et ne peut être échangée contre de l’argent.
+                            </p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="grid_icon">
+                                <svg class="svg h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokelinecap="round" strokelinejoin="round" strokewidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg> 
+                            </div>
+                            <p>
+                                Votre achat ne donne pas lieu à une réservation. 
+                            </p>
+                            <p>
+                                Le bénéficiaire se chargera de réserver son RDV, en précisant ses nom, prénom et n° de bon-cadeau par 
+                                mail ou téléphone. <br>Contact : 07 49 58 85 20 ou 
+                                <script type="text/JavaScript">
+                                    var part1 = "contact";
+                                    var part2 = Math.pow(2,6);
+                                    var part3 = String.fromCharCode(part2);
+                                    var part4 = "mc-kinesiologie.fr"
+                                    var part5 = part1 + String.fromCharCode(part2) + part4;
+                                    document.write("<a href=" + "mai" + "lto" + ":" + part5 + ">" + part1 + part3 + part4 + "</a>");
+                                </script>.
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

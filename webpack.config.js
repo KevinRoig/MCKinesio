@@ -29,6 +29,7 @@ Encore
     .addEntry('contact', './assets/contact.js')
     .addEntry('about_me', './assets/about_me.js')
     .addEntry('dream_machine', './assets/dream_machine.js')
+    .addEntry('gift_card', './assets/gift_card.js')
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     .enableStimulusBridge('./assets/controllers.json')
@@ -67,7 +68,7 @@ Encore
     .copyFiles({
         from: './assets/images',
         to: 'images/[path][name].[hash:8].[ext]',
-        pattern: /\.(png|jpg|jpeg|svg|ico)$/
+        pattern: /\.(png|jpg|jpeg|svg|ico|pdf)$/
     })
 
     // enables Sass/SCSS support

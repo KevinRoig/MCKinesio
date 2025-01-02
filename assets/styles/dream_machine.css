@@ -47,8 +47,10 @@ h3 {
 .button_container {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    height: 150px;
 }
 .button_container a {
     max-width: 50vw;
@@ -60,9 +62,14 @@ h3 {
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    text-align: center;
     line-height: 40px;
-    padding: 5px 20px;
+    padding: 8px 20px;
+}
+
+.gift_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .svg {
@@ -70,6 +77,14 @@ h3 {
     height: 40px;
     margin: 0 0.5rem;
 }
+
+#gift_icon {
+    position: unset;
+    z-index: 0;
+    height: 35px;
+    border-radius: 0;
+}
+
 
 #rdv {
     display: flex;

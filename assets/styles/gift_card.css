@@ -1,0 +1,167 @@
+.main_container {
+    display: flex;
+    width: 100%;
+    padding: 0rem 0 1rem 0;
+}
+.first_container, .second_container {
+    width: 40%;
+    padding: 2rem 0;
+    color: #286f6f;
+    margin: 0 auto;
+    padding: 2rem;
+    h1 {
+        text-align: center;
+    }
+}
+
+.infos_container {
+    margin: 3rem auto;
+}
+
+.image {
+    text-align: center;
+}
+
+img {
+    width: 350px;
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.button_container a {
+    background-color: #286f6f;
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        margin: 0 0.5rem;
+    }
+}
+
+.second_container h2 {
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto 2rem auto;
+    padding: 0;
+    gap: 1rem 2rem;
+    color: white;
+    font-weight: 500;
+    list-style: none;
+    counter-reset: doc;
+    text-align: justify;
+}
+
+.grid>li {
+    counter-increment: doc;
+}
+
+.grid>li:before {
+    content: counter(doc) ". ";
+}
+
+.grid>li {
+    border-radius: 10px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto 1fr;
+    gap: 0.5rem;
+    background-color: rgb(234, 155, 106, 1);
+}
+
+.grid p {
+    margin-top: 0;
+}
+
+#last_line {
+    grid-column: span 2;
+    text-align: center;
+}
+
+#last_line:before {
+    content: none;
+}
+
+.text li::before {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    padding-left: 1rem;
+    padding-top: 3.35rem;
+}
+
+.grid_icon {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1rem;
+    height: 40px;
+}
+
+.grid li img {
+    max-width: 50px;
+    border-radius: 0;
+}
+
+.text a {
+    color: white;
+    text-decoration: underline;
+}
+
+.pdf {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.disclaimer {
+    background-color: #286F6F;
+}
+
+.svg {
+    width: 50px;
+    height: 50px;
+}
+
+.icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 0;
+}
+
+
+#gift_icon {
+    height: 35px;
+}
+
+/* --------------------- MEDIA QUERIES ---------------------------- */
+
+@media only screen and (max-width: 800px) {
+    .main_container {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .first_container, .second_container {
+        width: 90%;
+        padding: 0;
+    }
+
+    .first_container {
+        margin-bottom: 2rem;
+    }
+}

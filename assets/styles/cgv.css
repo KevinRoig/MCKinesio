@@ -16,3 +16,8 @@
 h2 {
     margin-bottom: 0;
 }
+
+.decharge {
+    color: #0D4442;
+    text-decoration: underline;
+}
